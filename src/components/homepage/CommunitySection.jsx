@@ -21,8 +21,8 @@ const githubUsernames = [
 
 export default function CommunitySection() {
   return (
-    <section className="no-underline-links">
-      <div className="mx-auto flex w-full flex-col items-center justify-center bg-gradient-to-b from-[#262626] to-black px-4 py-16 pt-64 text-white dark:from-zinc-200/90 dark:to-white dark:text-zinc-700">
+    <section>
+      {/* <div className="mx-auto flex w-full flex-col items-center justify-center bg-gradient-to-b from-[#262626] to-black px-4 py-16 pt-64 text-white dark:from-zinc-200/90 dark:to-white dark:text-zinc-700">
         <h2 className="text-3xl">
           Join the <span className="text-primary-100">community</span>
         </h2>
@@ -61,7 +61,7 @@ export default function CommunitySection() {
             <Linkedin className="h-5 w-5" /> LinkedIn &rarr;
           </Link>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
