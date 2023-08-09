@@ -16,19 +16,13 @@ export default function HelpSection({ className = '' }) {
         </h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <img
-              src="/static/landing-page/calendar.svg"
-              alt="Book a demo"
-              width="48"
-              height="48"
-            />
             <h3 className="my-3">Book a Demo</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
               Contact us for a demo. We are looking forward to connecting with
               you.
             </p>
             <Link
-              href="https://dyte.io/schedule-demo"
+              href="https://getblox.ai/the-blox-product/"
               className="text-primary dark:text-primary-100"
             >
               Schedule a Call &rarr;
@@ -42,16 +36,16 @@ export default function HelpSection({ className = '' }) {
               width="48"
               height="48"
             />
-            <h3 className="my-3">Support</h3>
+            <h3 className="my-3">Resources</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Dyte&apos;s expert support team is always available to help. Connect for
-              dedicated 1:1 support!
+              Explore our blogs, podcasts, case studies, expert POVs, analyst
+              reports and more, and learn how AI can add value to your business.
             </p>
             <Link
-              href="https://dyte.io/contact"
+              href="https://getblox.ai/resources/"
               className="text-primary dark:text-primary-100"
             >
-              Contact Us &rarr;
+              Visit Us &rarr;
             </Link>
           </div>
 
@@ -62,13 +56,13 @@ export default function HelpSection({ className = '' }) {
               width="48"
               height="48"
             />
-            <h3 className="my-3">FAQs</h3>
+            <h3 className="my-3">Privacy Policy</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Browse through our FAQs to find answers to commonly asked
-              questions.
+              If you do not agree with this Privacy Policy Statement, do not
+              access, use, or view our website.
             </p>
             <Link href="/faq" className="text-primary dark:text-primary-100">
-              View FAQs &rarr;
+              View Policy &rarr;
             </Link>
           </div>
         </div>
