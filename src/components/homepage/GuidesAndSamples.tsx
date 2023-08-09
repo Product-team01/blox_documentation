@@ -15,7 +15,6 @@ interface Guide {
   title: string;
   icon: any;
   text: string;
-
 }
 
 const guides: Guide[] = [
@@ -23,19 +22,16 @@ const guides: Guide[] = [
     title: 'Start Recording a Meeting',
     icon: RecordRegular,
     text: 'Check out an example of this integration of recording a meeting.',
-    
   },
   {
     title: 'Migrate from Twilio',
     icon: VideoRegular,
     text: 'Migration simplified. Refer the guide.',
-   
   },
   {
     title: 'Create a Breakout Room',
     icon: AppsAddInRegular,
     text: 'Easily split a meeting in separate sessions.',
-
   },
 ];
 
@@ -128,8 +124,8 @@ function Sample({ title, platform, blog, source, demo }: Sample) {
 
 export default function GuidesAndSamples() {
   return (
-    <section className="no-underline-links my-40 mx-auto flex w-full max-w-5xl flex-col gap-10 p-4 py-0 md:flex-row md:gap-0">
-      <div className="flex-1">
+    <section>
+      {/* <div className="flex-1">
         <div className="mb-8 flex items-center justify-between">
           <h3 className="m-0">Popular how to guides</h3>
 
@@ -169,7 +165,7 @@ export default function GuidesAndSamples() {
             <Sample {...sample} key={sample.title} />
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
