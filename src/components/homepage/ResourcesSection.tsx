@@ -122,8 +122,8 @@ export default function ResourcesSection() {
   };
 
   return (
-    <section className="no-underline-links my-20 px-6">
-      <div className="mx-auto max-w-5xl">
+    <section>
+      {/* <div className="mx-auto max-w-5xl">
         <div className="flex items-center justify-between">
           <div>
             <span className="dyte-badge">RESOURCES</span>
@@ -193,7 +193,7 @@ export default function ResourcesSection() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
