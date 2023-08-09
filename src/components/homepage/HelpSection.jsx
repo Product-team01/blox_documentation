@@ -30,12 +30,6 @@ export default function HelpSection({ className = '' }) {
           </div>
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <img
-              src="/static/landing-page/customer.svg"
-              alt="Support"
-              width="48"
-              height="48"
-            />
             <h3 className="my-3">Resources</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
               Explore our blogs, podcasts, case studies, expert POVs, analyst
@@ -50,12 +44,6 @@ export default function HelpSection({ className = '' }) {
           </div>
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <img
-              src="/static/landing-page/chat.svg"
-              alt="FAQs"
-              width="48"
-              height="48"
-            />
             <h3 className="my-3">Privacy Policy</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
               If you do not agree with this Privacy Policy Statement, do not
