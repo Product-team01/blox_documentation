@@ -186,15 +186,15 @@ const docs = [
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
 const defaultSettings = {
-  breadcrumbs: true,
-  editUrl: 'https://github.com/dyte-in/docs/tree/main/',
-  showLastUpdateTime: true,
-  remarkPlugins: [
-    [require('@docusaurus/remark-plugin-npm2yarn'), {
-      sync: true
-    }],
-  ],
-  sidebarPath: require.resolve('./sidebars-default.js'),
+  // breadcrumbs: true,
+  // editUrl: 'https://github.com/dyte-in/docs/tree/main/',
+  // showLastUpdateTime: true,
+  // remarkPlugins: [
+  //   [require('@docusaurus/remark-plugin-npm2yarn'), {
+  //     sync: true
+  //   }],
+  // ],
+  // sidebarPath: require.resolve('./sidebars-default.js'),
 };
 
 /**
