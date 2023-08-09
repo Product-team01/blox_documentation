@@ -13,11 +13,7 @@ import SDKs from '../components/homepage/SDKs';
 
 export default function Homepage() {
   return (
-    <Layout
-      description="Real-time audio & video SDKs, ready to launch 🚀"
-      wrapperClassName="homepage flex flex-col"
-      noFooter
-    >
+    <Layout wrapperClassName="homepage flex flex-col" noFooter>
       <Head>
         <link rel="prefetch" href="/assets/css/elements.min.css" />
       </Head>
