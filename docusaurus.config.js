@@ -56,9 +56,9 @@ const docs = [
   //   },
   // },
   {
-    id: 'react-ui-kit',
-    path: 'docs/react-ui-kit',
-    routeBasePath: '/react-ui-kit',
+    id: 'Integration',
+    path: 'docs/Integration',
+    routeBasePath: '/Integration',
     versions: {
       current: {
         label: '1.x.x',
