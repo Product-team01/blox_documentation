@@ -39,7 +39,7 @@ info:
       | 502         | Bad Gateway                                      |
       | 504         | Gateway Timeout                                      |
 servers:
-  - url: https://api-dev.madstreetden.xyz
+  - url: https://use1.vue.ai
     description: Dev Server
 security:
   - ApiKeyAuth: []
