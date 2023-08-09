@@ -93,21 +93,18 @@ export default function HeroSection() {
       <section className="noise-bg no-underline-links px-4 pt-16 lg:py-0">
         <div className="flex flex-col items-center justify-between py-14">
           <h2 className="mb-4 font-jakarta text-5xl font-bold">
-            Build with Dyte
+            welcome to Blox Support
           </h2>
           <p className="max-w-xl text-center text-text-400">
-            At Dyte, we're building the future of real-time communication.
-            Integrate programmable, and easily customizable live video and voice
-            into your web, mobile, and desktop applications with just a few
-            lines of code.
+         
           </p>
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-5xl grid-cols-1 grid-rows-2 gap-6 px-4 md:grid-cols-2">
-        {PRODUCTS.map((product) => (
+      <section >
+        {/* {PRODUCTS.map((product) => (
           <HeroProduct {...product} key={product.title} />
-        ))}
+        ))} */}
       </section>
     </>
   );
