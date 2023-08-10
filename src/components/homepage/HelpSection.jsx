@@ -16,41 +16,38 @@ export default function HelpSection({ className = '' }) {
         </h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <h3 className="my-3">Book a Demo</h3>
+            <h3 className="my-3">User Guides</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Contact us for a demo. We are looking forward to connecting with
-              you.
+              This guide is designed to help you navigate and make the most of your experience on our tool.
             </p>
             <Link
-              href="https://getblox.ai/the-blox-product/"
+              href="https://support.vue.ai/guides"
               className="text-primary dark:text-primary-100"
             >
-              Schedule a Call &rarr;
+              Take me there &rarr;
             </Link>
           </div>
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <h3 className="my-3">Resources</h3>
+            <h3 className="my-3">API Integration</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Explore our blogs, podcasts, case studies, expert POVs, analyst
-              reports and more, and learn how AI can add value to your business.
+              This comprehensive guide is designed to assist developers in integrating and leveraging the functionalities of our tool.
             </p>
             <Link
-              href="https://getblox.ai/resources/"
+              href="https://support.vue.ai/api/#/"
               className="text-primary dark:text-primary-100"
             >
-              Visit Us &rarr;
+              Take me there &rarr;
             </Link>
           </div>
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <h3 className="my-3">Privacy Policy</h3>
+            <h3 className="my-3">Other Integrations</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              If you do not agree with this Privacy Policy Statement, do not
-              access, use, or view our website.
+             This comprehensive guide is designed to help you seamlessly connect and extend the capabilities of our product.
             </p>
-            <Link href="/faq" className="text-primary dark:text-primary-100">
-              View Policy &rarr;
+            <Link href="https://support.vue.ai/Integration" className="text-primary dark:text-primary-100">
+              Take me there &rarr;
             </Link>
           </div>
         </div>
