@@ -19,7 +19,7 @@ properties:
     type: boolean
     description: |
       - By default all configs we be cached for a time period of 10 min
-      - Setting this true will make the search call to skip the cache and take the config from actual DB(stephanie)
+      - Setting this true will make the search call to skip the cache and take the config from actual DB.
   explain:
     type: boolean
     description: By setting this true you will get score explanation information about why a specific document matches in the search response
