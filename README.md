@@ -26,7 +26,7 @@ This section describes how you can get our documentation portal up and running o
 1. Clone the repo
 
 ```sh
-git clone https://github.com/dyte-in/docs.git
+git clone https://github.com/Product-team01/blox_docs.git
 ```
 
 2. Install NPM packages
