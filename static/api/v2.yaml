@@ -11,7 +11,9 @@ info:
     **Authentication**
      In order to access Blox APIs, it is crucial to include your API Key in the header of each request. This unique key is assigned to your account and will be provided to you during the onboarding process.Please ensure to keep your API key secure, it is imperative that you do not share it with anyone outside your organization or on any public platforms such as GitHub, Stack Overflow, or within client-side code.
     Authentication can be achieved through one of the following methods:
+   
     ** API Keys​** - Recommended Method for Server-side Integration. Use the API key provided as part of the onboarding process to complete this setup.
+   
     **Requesting URLs** - Recommended Method for client-side integration. By sharing the host URLs with us, we guarantee secure authentication for all requests made to these URLs. This means you won't have to expose or set up using the API key.
 
 
