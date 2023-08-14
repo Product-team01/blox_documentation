@@ -9,17 +9,21 @@ info:
       It also explains the various outputs in detail. Our APIs adhere to REST principles and the request and responses support JSON format.
 
     **Authentication**
+     In order to access Blox APIs, it is crucial to include your API Key in the header of each request. This unique key is assigned to your account and will be provided to you during the onboarding process.Please ensure to keep your API key secure, it is imperative that you do not share it with anyone outside your organization or on any public platforms such as GitHub, Stack Overflow, or within client-side code.
+    Authentication can be achieved through one of the following methods:
+    ** API Keys​** - Recommended Method for Server-side Integration. Use the API key provided as part of the onboarding process to complete this setup.
+    **Requesting URLs** - Recommended Method for client-side integration. By sharing the host URLs with us, we guarantee secure authentication for all requests made to these URLs. This means you won't have to expose or set up using the API key.
 
-      The Blox APIs expects API Keys to be passed in the header for every request. Each API Key is associated to a specific account and will be handed over during onboarding by our sales team.
 
     **Correlation and Request Identifiers**
       
       * Correlation Identifier
-        For every Blox API, we recommend to pass the correlation id in the request header. Our systems add this to our log traces which will help to debug information in case of errors. This is not a mandatory field but is recommended strongly to serve better.
-      
-      * Request Identifier
-        In every Blox API, we generate a request identifier and associate it to the request even before we start processing the request. Our systems add this to our log traces which will help to debug information in case of errors. 
+        To optimize the performance of Blox API, it is highly recommended to include the correlation id in the request header. By doing so, our systems will seamlessly integrate this information into our log traces. This will greatly facilitate the troubleshooting process in the event of any errors. Although not mandatory, we strongly recommend providing this id to enhance our ability to serve you better.
 
+      * Request Identifier
+         Blox API generates a unique request identifier for each request before processing it. This identifier is then logged in our system, enabling easy trace & debugging in case of errors.
+
+      **Note**: The Correlation Identifier is common for search and track calls going from the same page
       We return the request and correlation identifier in all the responses subject to availability.
 
     **Error Handling**
