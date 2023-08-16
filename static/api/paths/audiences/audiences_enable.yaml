@@ -3,6 +3,12 @@ post:
     - audiences
   summary: Enable
   operationId: enable_api_v1_workflows_personalization_audiences_enable_post
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody: {
     content: {
       application/json: {

@@ -2,7 +2,7 @@ name: Trending
 type: Popularity
 inputs: []
 required_config:
-- type: trending_score_field
+- type: trending_use_case
 config_schema:
   type: array
   items:
@@ -16,17 +16,13 @@ config_schema:
             properties:
               value:
                 type: string
-                default: msd_internal_trending
-                enum:
-                - trending_count_scorer
-                - msd_internal_trending
               type:
                 description: Parameter used to personalise the result
-                const: trending_score_field
+                const: trending_use_case
               field:
                 description: When enabled, the result will be personalized based on
                   the user history
-                const: trending_score_field
+                const: trending_use_case_name
 DAG:
   members:
   - node:

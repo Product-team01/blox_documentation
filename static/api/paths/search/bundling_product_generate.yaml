@@ -4,6 +4,12 @@ post:
   summary: Content Generate API
   description: Returns the list of objects
   operationId: bundling_api_content_generate
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Content generate payload
     content:
@@ -38,24 +44,13 @@ post:
                               - type: integer
                         operator:
                           type: string
-                  boost_by:
-                    description: boost to be applied while serving recommendations
-                    type: array
-                    items:
-                      type: string
                   curations_data: 
                     value:
                       curations: 47430e39-76cb-5b2e-8e18-f122e9999
-                      content_ids :
-                        - MP000000007552891
-                        - MP000000007552809
-                      image_urls:
-                        - https://d21buduchpaw6.cloudfront.net/image_search/1546375799l8c4p.png
-                        - https://d21buduchpaw6.cloudfront.net/image_search/2560_3000.jpg
                   facet_filters: 
                     - Tops
               page_num: 1
-              num_results: 100
+              num_results: 16
   responses:
     "200":
       "description": "OK"

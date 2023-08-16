@@ -4,6 +4,12 @@ post:
   summary: Search User History
   description: Get the user history for the given list of events
   operationId: search_user_history
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   requestBody:
     content:
       application/json:

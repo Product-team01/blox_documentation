@@ -4,6 +4,12 @@ get:
   summary: List Modules
   description: List all created modules for an account
   operationId: get_modules
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     "200":
       description: Successful Response
@@ -69,6 +75,12 @@ post:
   summary: Create Modules
   description: Create a module for the account
   operationId: create_module
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Creating Modules
     content:

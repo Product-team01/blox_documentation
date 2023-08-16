@@ -5,6 +5,11 @@ post:
   description: Add datasource for a catalog.
   operationId: add_datasource
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id
@@ -54,6 +59,11 @@ get:
   description: Get datasource for a catalog.
   operationId: get_datasource
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

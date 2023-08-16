@@ -4,6 +4,11 @@ get:
   summary: Get Config
   operationId: get_config_api_v1_trending_configs_get
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - description: unique identifier for the client's usecase e.g. trending_products, trending_buy_counts
       required: true
       schema:

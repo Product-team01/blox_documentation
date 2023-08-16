@@ -8,6 +8,11 @@ post:
     Admin api_key is required to authenticate the restoration of the catalog'
   operationId: unarchive_catalog
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

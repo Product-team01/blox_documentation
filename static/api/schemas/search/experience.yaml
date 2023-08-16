@@ -613,7 +613,18 @@ properties:
       ios:
         deduplication: false
         slots: {}
-
+  module_ids:
+    title: Module ids associated to the experience
+    type: array
+    items:
+      type: string
+    example: ["396efe96-e7d9-469d-aefe-2c903eb47b17"]
+  created_ts:
+    type: string
+    example: 2023-03-13T16:40:42.072016
+  updated_ts:
+    type: string
+    example: 2023-03-13T17:40:42.072016
 required:
   - page_id
   - page_name

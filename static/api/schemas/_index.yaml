@@ -385,6 +385,44 @@ RarityLite:
   $ref: starfire/rarity_lite.yaml
 RarityPostConfigRequest:
   $ref: starfire/rarity_post_config_request.yaml
+SeasonalityDiscover:
+  $ref: starfire/seasonality_discover.yaml
+SeasonalityGetConfigResponse:
+  $ref: starfire/seasonality_get_config_response.yaml
+SeasonalityListConfigResponse:
+  $ref: starfire/seasonality_list_config_response.yaml
+SeasonalityLite:
+  $ref: starfire/seasonality_lite.yaml
+SeasonalityPostConfigRequest:
+  $ref: starfire/seasonality_post_config_request.yaml
+
+# User profile Schema
+UserProfileRequestAbsoluteAffinity:
+  $ref: user-profile/request/absolute-affinity.yaml
+UserProfileRequestRelativeAffinity:
+  $ref: user-profile/request/relative-affinity.yaml
+UserProfileRequestSessionEvents:
+  $ref: user-profile/request/session-events.yaml
+UserProfileRequestPerSessionEvents:
+  $ref: user-profile/request/per-session-events.yaml
+UserProfileRequestTimeDelta:
+  $ref: user-profile/request/time-delta.yaml
+UserProfileRequestEventByPrice:
+  $ref: user-profile/request/event-by-price.yaml
+
+UserProfileResponseAbsoluteAffinity:
+  $ref: user-profile/response/absolute-affinity.yaml
+UserProfileResponseRelativeAffinity:
+  $ref: user-profile/response/relative-affinity.yaml
+UserProfileResponseSessionEvents:
+  $ref: user-profile/response/session-events.yaml
+UserProfileResponsePerSessionEvents:
+  $ref: user-profile/response/per-session-events.yaml
+UserProfileResponseTimeDelta:
+  $ref: user-profile/response/time-delta.yaml
+UserProfileResponseEventByPrice:
+  $ref: user-profile/response/event-by-price.yaml
+
 
 #This seems duplicate of exisitng error response
 ErrorResponse_V2:
@@ -395,3 +433,52 @@ EmptyDataResponse:
   $ref: EmptyDataResponse.yaml
 DagStatus:
   $ref: DagStatus.yaml
+StatusResponse:
+  $ref: StatusResponse.yaml
+
+EventsDataSourceRequest:
+  $ref: EventsDataSourceRequest.yaml
+EventsDataSourceResponse:
+  $ref: EventsDataSourceResponse.yaml
+catalog_search:
+  $ref: search/catalog_search.yaml
+CatalogAsyncSampleOut:
+  $ref: CatalogAsyncSampleOut.yaml
+TrendingConfigLiteResponse:
+  $ref: TrendingConfigLiteResponse.yaml
+event_frequency_config:
+  $ref: starfire/event_frequency_config.yaml
+affinity_get_config_response:
+  $ref: starfire/affinity_get_config_response.yaml
+CFCPConfigLite:
+  $ref: CFCPConfigLite.yaml
+EventsRunJobResponse:
+  $ref: EventsRunJobResponse.yaml
+DXMMetricsFilters:
+  $ref: DXMMetricsFilters.yaml
+MetricsQueryConfig:
+  $ref: MetricsQueryConfig.yaml
+MetricsQueryConfigIn:
+  $ref: MetricsQueryConfigIn.yaml
+MetricsQueryConfigOut:
+  $ref: MetricsQueryConfigOut.yaml
+bundle_index_simple_response:
+  $ref: search/bundle_index_simple_response.yaml
+bundle_error_response:
+  $ref: search/bundle_error_response.yaml
+bundle_recommend_bundles_request:
+  $ref: search/bundle_recommend_bundles_request.yaml
+bundle_common_response:
+  $ref: search/bundle_common_response.yaml
+bundle_curation_apis_error_response:
+  $ref: search/bundle_curation_apis_error_response.yaml
+ConfigDelete:
+  $ref: ConfigDelete.yaml
+experiment:
+  $ref: search/experiment.yaml
+ProjectsExportStatus.yaml:
+  $ref: projects/export-status.yaml
+ProjectsLearningStatus.yaml:
+  $ref: projects/learning-status.yaml
+Segments:
+  $ref: segments/segment.yaml

@@ -4,6 +4,11 @@ post:
     seasonality, rarity. For trending we need to know the event types (buy, pageView)
     based on which we want the trending scores are to be computed
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - in: query
     name: model_type
     schema:
@@ -43,6 +48,11 @@ get:
   description: Gets config for population based models like trending, cfcp, affinity,
     seasonality, rarity.
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - in: query
     name: model_type
     schema:

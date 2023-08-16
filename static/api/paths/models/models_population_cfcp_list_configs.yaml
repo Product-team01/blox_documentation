@@ -5,6 +5,11 @@ get:
   description: Lists the info for the configs filtered by the values in the argument. If no filter specified all keys are returned.
   operationId: list_configs_api_v1_cfcp_list_get
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - description: unique api key for the client
       required: true
       schema:

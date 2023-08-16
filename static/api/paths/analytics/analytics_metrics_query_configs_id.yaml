@@ -5,12 +5,17 @@ patch:
   description: Update Metrics query config
   operationId: update_metrics_query_config
   parameters:
-    - required: true
-      schema:
-        title: Metrics Query Config ID
-        type: string
-      name: query_config_id
-      in: path
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
+  - required: true
+    schema:
+      title: Metrics Query Config ID
+      type: string
+    name: query_config_id
+    in: path
   requestBody:
     content:
       application/json:
@@ -44,12 +49,17 @@ get:
   description: Get Metrics Query configs by Metric ID
   operationId: get_metrics_query_configs_by_metric_query_config_id
   parameters:
-    - required: true
-      schema:
-        title: Metrics Query Config ID
-        type: string
-      name: query_config_id
-      in: path
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
+  - required: true
+    schema:
+      title: Metrics Query Config ID
+      type: string
+    name: query_config_id
+    in: path
   responses:
     '200':
       description: Successful Response
@@ -78,12 +88,17 @@ delete:
   description: Delete Metrics Query configs
   operationId: delete_metrics_query_configs
   parameters:
-    - required: true
-      schema:
-        title: Metrics Query Config ID
-        type: string
-      name: query_config_id
-      in: path
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
+  - required: true
+    schema:
+      title: Metrics Query Config ID
+      type: string
+    name: query_config_id
+    in: path
   responses:
     '200':
       description: Successful Response

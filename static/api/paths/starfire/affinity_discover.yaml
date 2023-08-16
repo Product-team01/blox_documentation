@@ -3,6 +3,12 @@ post:
     - affinity
   summary: Discover Affinity Use Cases for a Client
   operationId: discover_affinity
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   responses:
     '200':
       description: Successful Response

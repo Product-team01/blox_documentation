@@ -7,16 +7,18 @@ properties:
       type: object
       properties:
         data:
+          description: Has contents for feedback
           type: object
-          description: Has keys as curation_id + client_name and values has contents for feedback
-          additionalProperties: 
-            type: array
-            items:
-              type: object
-              properties:
-                primary_key:
-                  title: primary key value for feedback
-                  type: string
+          properties:
+            feedback_type:
+              description: Feedback type of the product or outfit
+              type: array
+              items:
+                type: object
+                properties:
+                  primary_key:
+                    title: primary key value for feedback
+                    type: string
         curations:
           title: Curation of the Product
           type: string

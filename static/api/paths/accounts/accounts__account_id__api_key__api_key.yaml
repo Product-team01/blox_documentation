@@ -6,6 +6,11 @@ get:
     Account api_key is required to authenticate the archival of the client'
   operationId: get_api_key_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -61,6 +66,11 @@ patch:
     Account api_key is required to authenticate the archival of the client'
   operationId: patch_api_key_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -122,6 +132,11 @@ delete:
     Account api_key  is required to delete client'
   operationId: delete_api_key_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id

@@ -4,6 +4,12 @@ get:
   summary: Get Metric Workflow Config
   description: Gets the config for the metric workflow definitions
   operationId: list_configs_api_v1_metrics_configs_list_get
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

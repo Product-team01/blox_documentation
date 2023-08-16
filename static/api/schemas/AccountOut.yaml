@@ -16,20 +16,12 @@ properties:
   last_name:
     title: Last Name
     type: string
-  region:
-    title: region
-    description: The account belongs to which region
+  api_key:
+    title: api_key
     type: string
-  api_keys:
-    title: api_keys
-    type: array
-    items:
-      type: object
-  allowed_hosts:
-    title: api_keys
-    type: array
-    items:
-      type: object
+  url:
+    title: url
+    type: string
   status:
     title: Status
     type: string

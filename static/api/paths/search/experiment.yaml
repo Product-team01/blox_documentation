@@ -17,6 +17,12 @@ get:
   summary: Get Experiment
   description: Get specific Experiment for an Experience 
   operationId: get_experiment_by_id
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     "200":
       description: Successful Response
@@ -69,6 +75,12 @@ patch:
   summary: Update experiment
   description: Update experiment for an experience
   operationId: update_experiment
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Request for updating experiment
     content:

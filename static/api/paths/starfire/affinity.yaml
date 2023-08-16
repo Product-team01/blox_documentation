@@ -1,41 +1,3 @@
-get:
-  tags:
-    - affinity
-  summary: Get Config
-  operationId: get_affinity_config
-  parameters:
-    - description: unique identifier for the client's use case
-      required: true
-      schema:
-        title: Use Case
-        type: string
-        description: unique identifier for the client's use case
-      name: use_case
-      in: query
-    - description: boolean switch that toggles between lite and not config
-      required: false
-      schema:
-        title: Lite
-        type: boolean
-        description: boolean switch that toggles between lite and not config
-        default: true
-      name: lite
-      in: query
-  responses:
-    '200':
-      description: Successful Response
-      content:
-        application/json:
-          schema:
-            anyOf:
-              - $ref: '../../schemas/starfire/affinity_get_config_response.yaml'
-              - $ref: '../../schemas/EmptyResponse.yaml'
-    '422':
-      description: Validation Error
-      content:
-        application/json:
-          schema:
-            $ref: '../../schemas/HTTPValidationError.yaml'
 post:
   tags:
     - affinity
@@ -43,6 +5,12 @@ post:
   description: |-
     Lets one register a feature affinity config
   operationId: post_affinity_config
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   requestBody:
     content:
       application/json:
@@ -61,30 +29,4 @@ post:
         application/json:
           schema:
             $ref: '../../schemas/HTTPValidationError.yaml'
-delete:
-  tags:
-    - affinity
-  summary: Delete Config
-  operationId: delete_affinity_config
-  parameters:
-    - description: unique identifier for the client's use case
-      required: true
-      schema:
-        title: Use Case
-        type: string
-        description: unique identifier for the client's use case
-      name: use_case
-      in: query
-  responses:
-    '200':
-      description: Successful Response
-      content:
-        application/json:
-          schema:
-            $ref: '../../schemas/EmptyResponse.yaml'
-    '422':
-      description: Validation Error
-      content:
-        application/json:
-          schema:
-            $ref: '../../schemas/HTTPValidationError.yaml'
+

@@ -8,17 +8,13 @@ data:
   name: Collaborative Filtering
   config:
   - params:
-    - type: collaborative_filtering_model
+    - type: collaborative_filtering_use_case
       value: 0.3
       field: sample_use_case_from_star_fire
 
-    - field: trending_use_case_name
-      value: trending_use_case_from_star_fire
-      type: trending_use_case
-
-    - field: exploration
+    - field: sample_use_case_from_star_fire
       value: 0.3
-      type: exploration
+      type: trending_use_case
                 
   preset: true
   client: global

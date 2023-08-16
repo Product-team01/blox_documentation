@@ -19,6 +19,10 @@ properties:
     type: string
     description: unique identifier of a graph
     example: ''
+  graph_execution_config_id:
+    type: string
+    description: unique identifier of a graph execution config
+    example: ''
   taxonomy_id:
     type: string
     description: unique identifier of a taxonomy

@@ -5,6 +5,11 @@ put:
   description: Update config details
   operationId: update_config
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Config Name
@@ -38,6 +43,11 @@ delete:
   description: Delete a config in the system
   operationId: delete_config
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Config Name

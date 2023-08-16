@@ -1,4 +1,9 @@
 parameters:
+- name: x-correlation-id
+  in: header
+  description: correlation id to track requests
+  schema:
+    type: string
 - schema:
     type: string
   name: catalog_id

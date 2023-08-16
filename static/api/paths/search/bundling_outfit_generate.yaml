@@ -1,17 +1,23 @@
 post:
   tags:
     - bundling apis
-  summary: Outfit Generate API
+  summary: Recommend Bundles API
   description: Returns the list of list of objects
   operationId: bundling_api_outfit_generate
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
-    description: Outfit generate payload
+    description: Recommend Bundles payload
     content:
       application/json:
         schema:
-          $ref: "../../schemas/search/bundle_common_request.yaml"
+          $ref: "../../schemas/search/bundle_recommend_bundles_request.yaml"
         examples:
-          outfit_generate_request:
+          recommend_bundles_request:
             value:
               catalogs:
                 c49b53bf19:
@@ -41,9 +47,6 @@ post:
               curations_data: 
                 value:
                   curations: 47430e39-76cb-5b2e-8e18-f122e9999a1
-                  content_ids :
-                    - MP000000007552891
-                    - MP000000007552809
               page_num: 1
   responses:
     "200":

@@ -5,6 +5,11 @@ get:
   description: Filter Metrics Query configs by Metric Name and Source
   operationId: get_metrics_query_configs_by_metric_query_config_name
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: stringparameters:
     - required: false
       schema:
         title: Metrics Query Config Name

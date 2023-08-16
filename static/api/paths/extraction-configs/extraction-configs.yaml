@@ -26,6 +26,16 @@ get:
           - ENRICHMENT
           - TAGGING
           - SEARCH
+    - name: active
+      in: query
+      description: indicates if the config is available for user or not
+      schema:
+        type: boolean
+    - name: preset
+      in: query
+      description: indicates if the config is set as global presets or not
+      schema:
+        type: boolean
     - name: x-correlation-id
       in: header
       description: correlation id to track requests

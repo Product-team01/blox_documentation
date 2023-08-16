@@ -5,6 +5,12 @@ get:
   description: |-
     List audiences available to export.
   operationId: list_export_audiences_api_v1_workflows_personalization_audiences__get
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

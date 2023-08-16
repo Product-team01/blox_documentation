@@ -10,6 +10,12 @@ get:
     description: correlation id to track requests
     schema:
       type: string
+  - name: Accept-Encoding
+    in: header
+    description: indicates the content encoding that the client can understand
+    schema:
+      type: string
+      default: gzip
   - name: page_num
     in: query
     description: number or offset to start fetching configs
@@ -98,6 +104,12 @@ post:
     description: correlation id to track requests
     schema:
       type: string
+  - name: Accept-Encoding
+    in: header
+    description: indicates the content encoding that the client can understand
+    schema:
+      type: string
+      default: gzip
   requestBody:
     description: projects object that needs to be added
     content:
@@ -155,6 +167,12 @@ delete:
     description: correlation id to track requests
     schema:
       type: string
+  - name: Accept-Encoding
+    in: header
+    description: indicates the content encoding that the client can understand
+    schema:
+      type: string
+      default: gzip
   - name: catalog_id
     in: query
     description: catalog_id for which projects should be deleted

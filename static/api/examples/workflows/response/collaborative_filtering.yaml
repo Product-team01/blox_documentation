@@ -29,35 +29,20 @@ data:
                   minimum: 0
                   maximum: 1
                 type:
-                  const: collaborative_filtering_model
+                  const: collaborative_filtering_use_case
                 field:
                   decription: Use case name for fetching trending field from starfire
                   type: string
             - type: object
               properties:
                 value:
-                  description: Weightage given to the field when boosting the result
-                  type: number
-                  format: float
-                  minimum: 0
-                  maximum: 1
-                type:
-                  description: exploration field
-                  const: exploration
-                field:
-                  description: exploration field
-                  const: exploration
-            - type: object
-              properties:
-                value:
                   type: string
-                  default: msd_internal_trending
                 type:
                   description: Parameter used to personalise the result
                   const: trending_use_case
                 field:
+                  type: string
                   decription: Use case name for fetching trending field from starfire.
-                  const: trending_use_case_name
   DAG:
     members:
     - node:

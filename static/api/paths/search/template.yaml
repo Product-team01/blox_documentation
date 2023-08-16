@@ -5,6 +5,11 @@ delete:
   description: Deletes the template
   operationId: delete_template
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Template Id
@@ -31,6 +36,11 @@ get:
   description: Retrieve Template by Id
   operationId: get_template_by_id
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Template Id
@@ -77,6 +87,11 @@ patch:
     for rendering. '
   operationId: update_template
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema:
         title: Template Id

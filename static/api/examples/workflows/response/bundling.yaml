@@ -63,6 +63,42 @@ data:
                   - base_color
                   - pattern
                   - type
+            - type: object
+              properties:
+                value:
+                  type: number
+                  format: float
+                  minimum: 0
+                  maximum: 1
+                type:
+                  const: candidate_personalization
+                field:
+                  const: personalization_weight
+                  description: weightage of personalization query in candidate selection
+            - type: object
+              properties:
+                value:
+                  description: Score can be of any limit based on which candidate fetch will occur
+                  type: number
+                  minimum: 0
+                type:
+                  const: outfit_score_threshold
+                field:
+                  const: outfit_score_threshold
+                  description: Candidates below this score is dropped
+            - type: object
+              properties:
+                value:
+                  type: number
+                  minimum: -5
+                  maximum: 10
+                type:
+                  description: Parameter used to personalise the result
+                  const: events
+                field:
+                  type: string
+                  description: Indicate the importance of user event(s) to be considered by the
+                    model while displaying results.
   DAG:
     members:
     - node:

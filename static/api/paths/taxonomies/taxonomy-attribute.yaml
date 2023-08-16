@@ -11,6 +11,12 @@ post:
         description: correlation id to track requests
         schema:
           type: string
+      - name: Accept-Encoding
+        in: header
+        description: indicates the content encoding that the client can understand
+        schema:
+          type: string
+          default: gzip
       - name: taxonomy_id
         in: path
         description: unique identifier of the taxonomy
@@ -94,6 +100,12 @@ delete:
       description: correlation id to track requests
       schema:
         type: string
+    - name: Accept-Encoding
+      in: header
+      description: indicates the content encoding that the client can understand
+      schema:
+        type: string
+        default: gzip
     - name: taxonomy_id
       in: path
       description: unique identifier of the taxonomy

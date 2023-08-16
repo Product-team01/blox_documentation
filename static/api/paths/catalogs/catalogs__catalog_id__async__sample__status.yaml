@@ -5,6 +5,11 @@ get:
   description: Check the async sample job and return the s3 file path. This API will return three job Status, READY, NOT_READY and FAILED status. file_path will be present only if the status is READY.
   operationId: async_sample_catalog_status
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

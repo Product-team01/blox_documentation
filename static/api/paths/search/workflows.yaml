@@ -5,6 +5,12 @@ get:
   description: Fetch any config - Decide if we want these to be called out separate
     or keep a single config api
   operationId: get_workflow
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   responses:
     '200':
       description: Successful Response
@@ -28,6 +34,12 @@ post:
   summary: Set a workflow  search-config
   description: Set any configuration
   operationId: set_workflow
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   requestBody:
     content:
       application/json:

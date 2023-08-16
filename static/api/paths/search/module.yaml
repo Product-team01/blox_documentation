@@ -5,6 +5,11 @@ get:
   description: Retrieve specific Module by Id
   operationId: get_module_by_id
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema:
         title: Module Id
@@ -92,6 +97,11 @@ patch:
   description: Update a Module
   operationId: update_module
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema:
         title: Module Id
@@ -202,6 +212,11 @@ delete:
   description: Delete Module by Id
   operationId: delete_module
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema:
         title: Module Id

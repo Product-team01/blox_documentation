@@ -1,11 +1,16 @@
 title: TrendingConfigLite
 required:
+  - name
   - catalog
   - algorithm
   - association_col
   - userevent_weight
 type: object
 properties:
+  name:
+    title: use case name
+    type: string
+    description: use case name  
   catalog:
     title: Catalog
     type: string

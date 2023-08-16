@@ -7,6 +7,12 @@ post:
     types supported. The templates are created in Blox app and used by embed code
     for rendering. '
   operationId: create_template
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   requestBody:
     content:
       application/json:
@@ -32,6 +38,12 @@ get:
   summary: List Templates
   description: List all Templates for the account
   operationId: get_templates
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   responses:
     '200':
       description: Successful Response

@@ -3,6 +3,12 @@ get:
   - events
   summary: Get Events Template Definition
   operationId: get_events_template_definition_api_v1_events_templates__get
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response
@@ -27,6 +33,12 @@ post:
   - events
   summary: Add Events Template
   operationId: add_events_template_api_v1_events_templates__post
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:

@@ -5,6 +5,11 @@ get:
   description: Get status of the latest dag run.
   operationId: status_api_v1_cfcp_status_get
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - description: unique identifier for the job
       required: true
       schema:

@@ -5,6 +5,11 @@ get:
   description: Export audience with specific ID
   operationId: export_api_v1_workflows_personalization_audiences__audience_id__get
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema:
         title: Audience Id

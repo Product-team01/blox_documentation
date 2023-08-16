@@ -5,6 +5,11 @@ patch:
   description:  Update a status of email Module
   operationId:  Update a status of email Module
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string  
     - required: true
       schema:
         title: Module Id

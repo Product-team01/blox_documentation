@@ -1,4 +1,10 @@
 title: EventsDataSourceRequest
+required:
+- name
+- type
+- config
+- mode
+- schedule
 type: object
 properties:
   name:
@@ -22,9 +28,3 @@ properties:
   schedule:
     type: string
     example: 0 0/30 * * * ?
-required:
-- name
-- type
-- config
-- mode
-- schedule

@@ -5,6 +5,11 @@ get:
   description: 'Fetching all allowed host for a particular account'
   operationId: get_all_allowed_host_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -58,6 +63,11 @@ post:
       - active is flag that would make a allowed host to be accessible for authentication
   operationId: create_allowed_host_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id

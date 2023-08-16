@@ -3,26 +3,19 @@ get:
     - cfcp
   summary: Status
   description: Get status of the latest dag run.
-  operationId: status_api_v1_cfcp_status_get
+  operationId: status_cfcp
   parameters:
-    - required: false
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
       schema:
-        title: Dag Id
         type: string
-      name: dag_id
-      in: query
-    - required: false
+    - required: true
       schema:
-        title: Dag Run Id
+        title: Use Case ID
         type: string
-      name: dag_run_id
-      in: query
-    - required: false
-      schema:
-        title: Use Case
-        type: string
-      name: use_case
-      in: query
+      name: use_case_id
+      in: path
   responses:
     '200':
       description: Successful Response

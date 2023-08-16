@@ -4,6 +4,12 @@ get:
   summary: List Catalogs
   description: Retrieve all catalogs for an account
   operationId: get_catalogs
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response
@@ -42,6 +48,12 @@ post:
   summary: Create Catalog
   description: Create a catalog
   operationId: create_catalog
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:

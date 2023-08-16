@@ -4,7 +4,7 @@ properties:
     type: string
   catalogs:
     type: object
-    description: "`catalogs` has one entry per `catalog-id` to its respective associated `fields`, `filters`, and page `context`"
+    description: "`catalogs` has one entry per `catalog-id` to its respective associated `fields`, `filters`, and `curations_data`"
     additionalProperties:
       type: object
       properties:
@@ -47,11 +47,6 @@ properties:
                     - type: integer
               operator:
                 type: string
-        boost_by:
-          description: boost to be applied while serving recommendations
-          type: array
-          items:
-            type: string
         curations_data:
           title: Fields that are specific for curaion APIs.
           type: object
@@ -59,15 +54,6 @@ properties:
             curations:
               description: Id of the curations.
               type: string
-            image_urls:
-              description: List of Image URLs for image search
-              type: array
-              items:
-                type: string
-            content_ids:
-              type: array
-              items:
-                type: string
   page_num":
     title: In case of pagination this denotes the no of page user has navigated to. 
     type: integer

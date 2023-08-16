@@ -231,8 +231,23 @@ properties:
             type: object
             properties:
               strategy:
-                type: string 
-                     
+                type: string
+  fallback_mapping:
+    type: object
+    description: dict of fallback mapping with strategy ids.
+    example:
+      b8395537-ed42-44e0-887d-759cd76728b8: b0e09fd3-5b0c-4831-9fa9-f5ce689fa08c
+      b0e09fd3-5b0c-4831-9fa9-f5ce689fa08c: 0dbda537-bd0a-4960-a40b-5f524eabfe5f
+  common_fallback_strategy:
+    type: string
+    description: Common fallback strategy used to assign tiles if fallback strategy also doesn't have enough results
+    example: visually-similar
+  created_ts:
+    type: string
+    example: 2023-03-13T16:40:42.072016
+  updated_ts:
+    type: string
+    example: 2023-03-13T17:40:42.072016
 required:
   - name
   - strategies

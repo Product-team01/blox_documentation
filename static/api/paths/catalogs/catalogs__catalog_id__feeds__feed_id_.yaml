@@ -5,6 +5,11 @@ get:
   description: Returns details of the specific feed processed for the catalog.
   operationId: get_feed_by_id
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

@@ -25,18 +25,15 @@ data:
               properties:
                 value:
                   type: string
-                  default: Relevance
+                  default: asc
                   enum:
-                  - Relevance
-                  - Trending
-                  - Price low to high
-                  - Price high to low
+                  - asc
+                  - desc
                 type:
                   description: Parameter used to order the results
                   const: ordering
                 field:
-                  decription: Order by
-                  const: order_by
+                  decription: Order by Field
             - type: object
               properties:
                 value:
@@ -49,6 +46,14 @@ data:
                   decription: When enabled, the result will be personalized based on
                     the user history
                   const: personalisation
+            - type: rarity_use_case
+              field:
+                type: string
+                discoverable: true
+              value:
+                type: float
+                max: 1
+                min: 0
   DAG:
     members:
     - node:

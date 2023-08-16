@@ -1,0 +1,14 @@
+title: clone_metrics_resource_response
+type: object
+required:
+- resource
+- details
+properties:
+  resource:
+    title: resource
+    type: string
+    description: resource can be strategy_id, page_id, module_id, experience_id, dcm
+  details:
+    title: details
+    type: string
+    description: details of the cloned resource if properly cloned or not

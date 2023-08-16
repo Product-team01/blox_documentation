@@ -4,6 +4,12 @@ get:
   summary: Get Config
   description: Get Audience segmentation config.
   operationId: get_config_api_v1_workflows_personalization_audiences_configs_get
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response
@@ -31,6 +37,12 @@ post:
     Lets one register Audience Segmentation config, which can then be used to setup a dag using dags APIs.
     If lite is true expected config is AudienceConfigLite else AudienceConfig.
   operationId: post_config_api_v1_workflows_personalization_audiences_configs_post
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:
@@ -71,6 +83,12 @@ delete:
   summary: Delete Config
   description: Delete config.
   operationId: delete_config_api_v1_workflows_personalization_audiences_configs_delete
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response
@@ -96,6 +114,12 @@ patch:
   summary: Patch Config
   description: Patch config.
   operationId: patch_config_api_v1_workflows_personalization_audiences_configs_patch
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:

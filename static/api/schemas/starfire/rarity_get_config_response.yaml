@@ -19,4 +19,4 @@ properties:
     type: string
     description: status for the request
   data:
-    $ref: 'rarity_lite.yaml'
+    $ref: 'rarity_lite_id.yaml'

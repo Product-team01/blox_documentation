@@ -4,6 +4,12 @@ post:
   summary: Create New Metric Query config
   description: Create Metrics query config
   operationId: create_metrics_query_config
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   requestBody:
     content:
       application/json:
@@ -36,6 +42,11 @@ get:
   description: List Metrics Query configs
   operationId: get_metrics_query_configs
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: false
       schema:
         title: Metrics Query Config Name

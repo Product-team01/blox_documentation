@@ -9,6 +9,11 @@ get:
     - path params account_id is the unique identifier for the account which is returned in the response of account creation
   operationId: get_account_by_id
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -49,6 +54,11 @@ put:
       - organization name and email can't be edited
   operationId: update_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -94,6 +104,11 @@ delete:
     Admin api_key is required to authenticate deletion of the client'
   operationId: delete_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id

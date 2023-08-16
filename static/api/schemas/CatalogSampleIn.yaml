@@ -2,6 +2,9 @@ type: object
 properties:
   project_id:
     type: string
+  resample:
+    description: this allows to skip the project id validation and impulse writer
+    type: boolean
   num_results:
     type: integer
   fields:
