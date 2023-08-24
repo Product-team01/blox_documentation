@@ -1,11 +1,18 @@
 post:
   tags:
     - search
-  summary: Returns a list of search recommendations
-  description: Returns the list of objects
+  summary: Returns a list of search recommendations.
+  description: The results will be returned based on the strategy or module or page name specified in the request.
   operationId: get_search_results
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Recommendations payload
+    required: true
     content:
       application/json:
         schema:
@@ -27,6 +34,10 @@ post:
                     - Image Src
                     - page link
                     - Vendor
+                  filters:
+                    - field: Vendor
+                      operator: exact
+                      value: Adidas
                   context:
                     Handle: 46696836bf
           search_request_module_name:

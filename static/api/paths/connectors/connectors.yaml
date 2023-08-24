@@ -4,7 +4,12 @@ get:
   summary: List supported Connectors
   description: Discover supported connectors with configuration parameters required.
   operationId: list_connectors
-  parameters: []
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
   responses:
     '200':
       description: Successful Response

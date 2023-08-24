@@ -5,6 +5,11 @@ get:
   description: schema/fields the catalog
   operationId: schema_fields
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - in: query
     name: facet
     schema:

@@ -4,6 +4,12 @@ post:
   summary: Run
   description: Trigger a run to compute specific segments given in the params.
   operationId: run_api_v1_workflows_personalization_audiences_async_run_post
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

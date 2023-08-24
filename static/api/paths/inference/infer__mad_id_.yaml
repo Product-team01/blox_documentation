@@ -83,7 +83,7 @@ put:
 get:
   tags:
   - inference
-  summary: Retrieve Status
+  summary: Retrieve Status of Async request
   description: Retrieves status of inference request and if successfully complete returns the inference result
   operationId: getInferenceData
   parameters:
@@ -104,7 +104,9 @@ get:
       content:
         application/json:
           schema:
-            $ref: '../../schemas/inference/InferPostResponse.yaml'
+            oneOf:
+              - $ref: '../../schemas/inference/InferPostResponse.yaml'
+              - $ref: '../../schemas/inference/InferAsyncInprogressResponse.yaml'
     '400':
       description: |
         Bad request:

@@ -5,6 +5,21 @@ get:
   description: Get DAG status for a client
   operationId: get_dag_status
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
+    - required: true
+      schema:
+        title: Workflow Type
+        type: string
+        example: "dxm"
+        enum:
+          - dxm
+          - tag
+      name: workflow_type
+      in: path
     - required: false
       schema:
         title: Dag Id
@@ -16,6 +31,13 @@ get:
         title: Dag Run Id
         type: string
       name: dag_run_id
+      in: query
+    - required: true
+      schema:
+        title: Catalog ID
+        type: string
+        example: "83cb071269"
+      name: catalog_id
       in: query
   responses:
     '200':

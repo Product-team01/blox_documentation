@@ -10,6 +10,12 @@ get:
     description: correlation id to track requests
     schema:
       type: string
+  - name: Accept-Encoding
+    in: header
+    description: indicates the content encoding that the client can understand
+    schema:
+      type: string
+      default: gzip
   - name: project_id
     in: path
     description: unique identifier of the project
@@ -77,6 +83,11 @@ get:
       Allowed values are PREDICTED, LABELED, ALL
     schema:
       type: string
+  - name: disabled_clusters
+    in: query
+    description: should be set to true to fetch random data points of completed clusters
+    schema:
+      type: boolean
   responses:
     '200':
       description: successful operation

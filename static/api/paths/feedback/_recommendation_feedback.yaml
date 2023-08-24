@@ -2,6 +2,12 @@ post:
   summary: Recommendation Feedback API
   description: Feedback API for recommendation
   operationId: recommendation-feedback
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   tags:
   - feedback
   requestBody:

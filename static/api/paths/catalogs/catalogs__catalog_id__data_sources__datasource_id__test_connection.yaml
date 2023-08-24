@@ -5,6 +5,11 @@ get:
   description: Test datasource connection for a catalog
   operationId: test_datasource
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

@@ -6,6 +6,11 @@ get:
     or aggregated values
   operationId: list_analytics_data
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Api Key

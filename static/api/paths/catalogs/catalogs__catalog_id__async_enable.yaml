@@ -5,6 +5,11 @@ post:
   description: Provisions and enables the pipeline to process any incoming data.
   operationId: catalog_enable
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

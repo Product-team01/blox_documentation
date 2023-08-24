@@ -4,6 +4,11 @@ get:
   summary: Get An Events Template Definition
   operationId: get_an_events_template_definition_api_v1_events_templates__event_meta__get
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Event Meta
@@ -35,7 +40,12 @@ put:
   - events
   summary: Update Events Template
   operationId: update_events_template_api_v1_events_templates__put
-  parameters: 
+  parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema: 
         title: Events Meta
@@ -73,6 +83,11 @@ delete:
   summary: Delete Events Template
   operationId: delete_events_template_api_v1_events_templates__event_meta__delete
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Event Meta

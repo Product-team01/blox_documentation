@@ -5,6 +5,11 @@ get:
   description: Infer schema of data available at a datasource for a catalog.
   operationId: infer_schema
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

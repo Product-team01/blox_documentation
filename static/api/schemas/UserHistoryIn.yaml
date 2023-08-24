@@ -1,5 +1,5 @@
 title: UserHistoryIn
-description: fetch user history request payload. Either user_id or blox_uuid is mandatory.
+description: fetch user history request payload. Blox_uuid is mandatory.
 type: object
 properties:
   catalog_id:
@@ -20,5 +20,4 @@ properties:
 
 required:
   - catalog_id
-  - user_id
   - blox_uuid

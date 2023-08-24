@@ -11,6 +11,12 @@ get:
   summary: Get Strategy
   description: Get the strategy config for the given id
   operationId: get_strategy_by_id
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     "200":
       description: Successful Response
@@ -71,6 +77,12 @@ patch:
     Passing only a subset of first level keys with their values updates only those
     keys. "
   operationId: update_strategy
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:
@@ -112,6 +124,12 @@ delete:
     Deletes the given strategy id and returns its config. Deleting a non
     existent strategy id, will throw a 404
   operationId: delete_strategy
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     "200":
       description: Successful Response

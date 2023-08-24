@@ -4,6 +4,11 @@ get:
   summary: Get Config
   operationId: get_config_api_v1_cfcp_configs_get
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string  
     - description: unique identifier for the client's usecase e.g. cfcp_buy_buy, cfcp_buy_pageView_1
       required: true
       schema:
@@ -43,6 +48,11 @@ post:
     If lite is true expected config is CFCPConfigLite.
   operationId: post_config_api_v1_cfcp_configs_post
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - description: unique api key for the client
       required: true
       schema:
@@ -76,6 +86,11 @@ delete:
   summary: Delete Config
   operationId: delete_config_api_v1_cfcp_configs_delete
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - description: unique identifier for the client's usecase e.g. cfcp_products, cfcp_buy_counts
       required: true
       schema:

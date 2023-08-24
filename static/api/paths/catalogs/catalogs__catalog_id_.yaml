@@ -5,6 +5,11 @@ get:
   description: Retrieve catalog by Id
   operationId: get_catalog_by_id
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id
@@ -44,6 +49,12 @@ get:
 patch:
   summary: ''
   operationId: patch-api-v1-catalogs-catalog_id
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: OK

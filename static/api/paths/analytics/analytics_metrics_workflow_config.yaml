@@ -4,6 +4,12 @@ get:
   summary: List DAG configurations for a client
   description: List DAG configurations for a client
   operationId: get_dag_config
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

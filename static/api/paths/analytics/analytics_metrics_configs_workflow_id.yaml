@@ -32,6 +32,11 @@ delete:
   description: This is used to delete the metrics definition config in config registry.
   operationId: delete_config_api_v1_metrics_configs_delete
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Metric Workflow ID
@@ -59,13 +64,18 @@ put:
   description: This is used to update the metrics definition config in config registry.
   operationId: put_config_api_v1_metrics_configs_put
   parameters:
-    - required: true
-      schema:
-        title: Metric Workflow ID
-        type: string
-        example: 3742_MadStreetDen
-      name: metric_workflow_id
-      in: path
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
+  - required: true
+    schema:
+      title: Metric Workflow ID
+      type: string
+      example: 3742_MadStreetDen
+    name: metric_workflow_id
+    in: path
   requestBody:
     content:
       application/json:

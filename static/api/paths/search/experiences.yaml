@@ -26,6 +26,12 @@ get:
       | when            |Time               | Target an Experience to be displayed between a particular Time of Day. Ex: 8 AM to 8 PM                                      |
 
   operationId: get_experiences
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     "200":
       description: Successful Response
@@ -192,6 +198,12 @@ post:
   summary: Create Experience
   description: Create Experience for specific account
   operationId: create_experience
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Experience request body
     content:

@@ -4,6 +4,12 @@ post:
   summary: Create Page
   description: Create a page
   operationId: create_page
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:
@@ -29,6 +35,12 @@ get:
   summary: List Pages
   description: List all Pages for the account
   operationId: get_pages
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

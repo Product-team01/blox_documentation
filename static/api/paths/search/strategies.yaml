@@ -7,6 +7,11 @@ get:
     flag)
   operationId: get_strategy
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - name: preset
       in: query
       description:
@@ -38,6 +43,12 @@ post:
   summary: Create Strategy
   description: Create a strategy. The strategy `name` is expected to be unique
   operationId: set_strategy
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:
@@ -54,6 +65,7 @@ post:
               - params:
                 - field: curation_id
                   type: curations
+                  value: 1
           AutoBundling:
             value:
               workflow_id: 02b397d5-b225-405a-a582-6665804f698e

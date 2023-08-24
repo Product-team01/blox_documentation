@@ -51,7 +51,6 @@ data:
               properties:
                 value:
                   type: string
-                  default: msd_internal_trending
                 type:
                   description: Parameter used to personalise the result
                   const: trending_use_case

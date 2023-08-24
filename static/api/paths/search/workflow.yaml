@@ -2,6 +2,11 @@ get:
   tags:
   - search
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Workflow Id
@@ -75,12 +80,17 @@ patch:
   description: Set any configuration
   operationId: update_workflow
   parameters:
-  - required: true
-    schema:
-      title: Workflow Id
-      type: string
-    name: workflow_id
-    in: path
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
+    - required: true
+      schema:
+        title: Workflow Id
+        type: string
+      name: workflow_id
+      in: path
   requestBody:
     content:
       application/json:
@@ -116,12 +126,17 @@ delete:
   tags:
   - internal
   parameters:
-  - required: true
-    schema:
-      title: Workflow Id
-      type: string
-    name: workflow_id
-    in: path
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
+    - required: true
+      schema:
+        title: Workflow Id
+        type: string
+      name: workflow_id
+      in: path
   summary: Delete the workflow configs for a client
   description: Fetch any config - Decide if we want these to be called out separate
     or keep a single config api

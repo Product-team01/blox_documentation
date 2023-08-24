@@ -19,13 +19,13 @@ properties:
       version:
         type: string
         description: Represents the version of string of ML models used for processing the request
-      blox_id:
+      msd_id:
         type: string
         description: Represents the unique identifier of a specific input
       catalog_id:
         type: string
         description: Unique identifier of the catalog to which the input and tags generated be associated.
-      blox_tags:
+      msd_tags:
         type: array
         description: List of all the tags inferred along with details of hierarchy and confidence scores of the tags.
         items:
@@ -53,7 +53,7 @@ properties:
                   hierarchy:
                     type: string
                     description: Attribute's hierarchy name from root attribute to the current level of the tag inferred. Is delimited by > symbol.
-                  hierarchy_ids:
+                  hierarchy_id:
                     type: string
                     description: Attribute's hierarchy id from root attribute to the current level of the tag inferred. Is delimited by > symbol.
                   results:
@@ -62,13 +62,13 @@ properties:
                     items:
                       type: object
                       properties:
-                        prediction_id:
+                        value_id:
                           type: string
-                          description: Predicted value id of the attribute
-                        prediction:
+                          description: Unique identifier of the predicted value attribute
+                        value:
                           type: string
                           description: Predicted value of the attribute
-                        prediction_box:
+                        value_box:
                           type: string
                           description: Bounding box of the image or specific words of a text used to infer tags
                         confidence:

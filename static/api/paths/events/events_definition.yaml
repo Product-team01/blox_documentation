@@ -4,6 +4,11 @@ get:
   summary: Get Events Definition
   operationId: get_events_definition_api_v1_events_definition_get
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: false
     schema:
       title: Is Preset
@@ -38,6 +43,12 @@ post:
   - events
   summary: Add Events Definition
   operationId: add_events_definition_api_v1_events_definition_post
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:

@@ -5,6 +5,11 @@ get:
   description: get segment by id
   operationId: getSegmentById
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - name: segment_id
       in: path
       description: uniqueidentifier of the segment

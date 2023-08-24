@@ -3,8 +3,13 @@ patch:
   - events
   summary: Event Datasource
   description: Update events datasource for an account
-  operationId: update events_datasource
+  operationId: update_events_datasource
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Datasource ID
@@ -15,7 +20,7 @@ patch:
     content:
       application/json:
         schema:
-          $ref: '../../schemas/EventsDataSourceRequest.yaml'
+          $ref: '../../schemas/Upd_EventsDataSourceRequest.yaml'
     required: true
   responses:
     '201':
@@ -36,15 +41,18 @@ patch:
         application/json:
           schema:
             $ref: '../../schemas/PostFailureResponse.yaml'
-
-
 delete:
   tags:
   - events
   summary: Event Datasource
   description: Delete events datasource for an account
-  operationId: delete events_datasource
+  operationId: delete_events_datasource
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Datasource ID

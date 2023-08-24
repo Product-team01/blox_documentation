@@ -10,6 +10,12 @@ get:
     description: correlation id to track requests
     schema:
       type: string
+  - name: Accept-Encoding
+    in: header
+    description: indicates the content encoding that the client can understand
+    schema:
+      type: string
+      default: gzip
   - name: attribute_id
     in: query
     description: attribute id for which the job is associated

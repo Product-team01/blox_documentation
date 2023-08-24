@@ -5,6 +5,11 @@ post:
   description: Create the raven job for catalog sample and store the text_search results to s3
   operationId: async_sample_catalog
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

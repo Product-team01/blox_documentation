@@ -5,6 +5,12 @@ get:
   description: Fetch list of metrics definitions, configured & stored in the config
     registry
   operationId: list_analytics_metrics
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

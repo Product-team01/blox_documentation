@@ -1,17 +1,23 @@
 post:
   tags:
     - bundling apis
-  summary: Auto Complete API
+  summary: Complete The Bundle API
   description: Returns the list of list of objects
   operationId: bundling_api_auto_complete
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
-    description: Auto Complete payload
+    description: Complete The Bundle payload
     content:
       application/json:
         schema:
-          $ref: "../../schemas/search/bundle_common_request.yaml"
+          $ref: "../../schemas/search/bundle_complete_bundle_request.yaml"
         examples:
-          outfit_generate_request:
+          complete_bundle_request:
             value:
               catalogs:
                 c49b53bf19:

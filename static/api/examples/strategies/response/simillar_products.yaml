@@ -19,9 +19,12 @@ data:
     - value: false
       type: personalisation
       field: personalisation
-    - field: rarity_use_case_name
+    - field: rarity_use_case_id
       value: rarity_use_case_from_starfire
       type: rarity_use_case
     - field: exploration_rarity
-      value: 0.3
+      value: 0.5
       type: exploration_rarity
+    - field: seasonality_use_case_id
+      value: seasonality-test-usecase
+      type: seasonality_use_case

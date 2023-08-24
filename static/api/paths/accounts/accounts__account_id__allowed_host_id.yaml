@@ -6,6 +6,11 @@ get:
     Account api_key is required to authenticate the archival of the client'
   operationId: get_allowed_host_id_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -63,6 +68,11 @@ patch:
     It is kind of used to enable or disable particular allowed host
   operationId: patch_allowed_host_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -125,6 +135,11 @@ delete:
     Account api_key or allowed is required to delete client'
   operationId: delete_allowed_host_account
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id

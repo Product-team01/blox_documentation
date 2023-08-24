@@ -14,6 +14,12 @@ post:
       description: correlation id to track requests
       schema:
         type: string
+    - name: Accept-Encoding
+      in: header
+      description: indicates the content encoding that the client can understand
+      schema:
+        type: string
+        default: gzip
   requestBody:
     content:
       application/json:

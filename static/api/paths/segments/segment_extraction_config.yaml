@@ -5,6 +5,11 @@ post:
   description: make extraction config active/inactive for  a segment by id
   operationId: manageAssociationOfExtractionConfigBySegment
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - name: segment_id
       in: path
       description: uniqueidentifier of the segment

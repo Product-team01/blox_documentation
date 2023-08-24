@@ -4,6 +4,12 @@ post:
   summary: Feedback API
   description: Returns the list of objects
   operationId: bundling_api_feedback
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Feedback payload
     content:
@@ -17,10 +23,10 @@ post:
               gender: women
               catalogs:
                 c49b53bf19:
-                  data: 
-                    '47430e39-76cb-5b2e-8e18-f122e9999a1c_pt-tata-run-1_1':
-                        - product_id: MP000000011362770
-                        - product_id: MP000000011504918
+                  data:
+                    'outfit_accept':
+                      - product_id: MP000000011362770
+                      - product_id: MP000000011504918
               feedback_type: outfit_accept
               page_num: 1
               num_results: 48

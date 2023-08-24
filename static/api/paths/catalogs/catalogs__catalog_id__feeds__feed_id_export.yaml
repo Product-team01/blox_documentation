@@ -5,6 +5,11 @@ get:
   description: Returns a downloadable url to a CSV File containing the Feed Failures for a given Catalog and Feed
   operationId: export_feed_failures
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

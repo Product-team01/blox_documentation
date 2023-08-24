@@ -1,6 +1,12 @@
 get:
   summary: Catalog status
   operationId: get-api-v1-catalogs-catalog_id-status
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful status response

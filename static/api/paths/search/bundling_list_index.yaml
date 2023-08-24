@@ -4,6 +4,12 @@ get:
   summary: Bundling APIs List
   description: API to List curation_model and tag_weight index mapping
   operationId: bundling_api_list
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     "200":
       "description": "Successful Response, This will list bundle model and tag weights catalogs"

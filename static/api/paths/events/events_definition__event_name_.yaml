@@ -4,6 +4,11 @@ get:
   summary: Get An Events Definition
   operationId: get_an_events_definition_api_v1_events_definition__event_name__get
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Event ID
@@ -36,6 +41,12 @@ delete:
   summary: Delete Events Definition
   operationId: delete_events_definition_api_v1_events_definition__event_name__delete
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
+  
   - required: true
     schema:
       title: Event ID
@@ -73,6 +84,11 @@ put:
   summary: Update Events Definition
   operationId: update_events_definition_api_v1_events_definition__put
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema:
         title: Event ID

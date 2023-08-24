@@ -4,6 +4,12 @@ post:
   summary: Get experiments for the requested timeframe
   description: Retrieves all experiment configs set & made live by user for Dxm
   operationId: get_experiments
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Experiments request body
     content:

@@ -23,3 +23,46 @@ properties:
   explain:
     type: boolean
     description: By setting this true you will get score explanation information about why a specific document matches in the search response
+  config:
+    type: array
+    items:
+      type: object
+      properties:
+        params:
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+              value:
+                anyOf:
+                  - type: array
+                    items:
+                      anyOf:
+                        - type: string
+                        - type: number
+                        - type: integer
+                  - type: boolean
+                  - type: string
+                  - type: number
+              type:
+                type: string
+        conditions:
+          type: array
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+              value:
+                type: array
+                items:
+                  anyOf:
+                    - type: string
+                    - type: integer
+                    - type: number
+              operator:
+                type: string
+  
+

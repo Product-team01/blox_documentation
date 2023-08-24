@@ -7,6 +7,12 @@ post:
     first name, last name details details
     - Account create api would work with super admin key only 
   operationId: create_account
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     content:
       application/json:
@@ -59,6 +65,11 @@ get:
 
   operationId: get_accounts
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - name: api_key
       required: false
       in: query

@@ -1,8 +1,14 @@
-post:
+delete:
   tags:
     - internal
   summary: Disable
-  operationId: enable_api_v1_workflows_personalization_audiences_disable_post
+  operationId: enable_api_v1_workflows_personalization_audiences_disable_delete
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

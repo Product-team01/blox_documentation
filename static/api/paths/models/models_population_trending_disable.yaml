@@ -4,6 +4,11 @@ post:
   summary: Disable
   operationId: disable_api_v1_trending_disable_post
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - description: unique identifier for the job
       required: true
       schema:

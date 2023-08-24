@@ -5,6 +5,11 @@ get:
   description: 'Gets all accounts resources for deletion'
   operationId: get_accounts_resources
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id
@@ -38,6 +43,11 @@ patch:
   description: 'Patch account resources is used for marking the deletion status of each resource'
   operationId: patch_accounts_resources
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Account Id

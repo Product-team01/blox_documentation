@@ -4,6 +4,12 @@ get:
   summary: Event Job Status
   description: Returns events pipeline enable status for client
   operationId: events_update_status
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

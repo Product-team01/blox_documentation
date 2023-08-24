@@ -7,6 +7,11 @@ get:
     the availability field should be set with meta as available
   operationId: sumpary_catalog
   parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Catalog Id

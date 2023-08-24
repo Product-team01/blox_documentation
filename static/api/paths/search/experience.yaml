@@ -1,4 +1,9 @@
 parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   - required: true
     schema:
       title: Experience Id
@@ -11,6 +16,12 @@ get:
   summary: Get Experience
   description: Retrieve specific Experience by Id
   operationId: get_experience_by_id
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   responses:
     "200":
       description: Successful Response
@@ -175,6 +186,12 @@ patch:
   summary: Update experience
   description: Update experience for the specified ID
   operationId: update_experience
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
   requestBody:
     description: Request for update experience
     content:
@@ -348,6 +365,11 @@ delete:
   description: Delete specific Experience
   operationId: delete_experience
   parameters:
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
     - required: true
       schema:
         title: Experience Id

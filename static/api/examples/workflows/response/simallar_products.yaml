@@ -56,6 +56,23 @@ data:
                   decription: When enabled, the result will be personalized based on
                     the user history
                   const: personalisation
+            - type: rarity_use_case
+              field:
+                enum:
+                  - rarity_use_case_id
+              value:
+                type: string
+                default: rarity_score_hm
+                discoverable: true
+            - type: exploration_rarity
+              field:
+                enum:
+                  - exploration_rarity
+                max: 1
+                min: 0
+              value:
+                type: float
+                discoverable: true
   DAG:
     members:
     - node:
