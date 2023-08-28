@@ -1,0 +1,22 @@
+title: Get Source by id response
+type: object
+properties:
+  sourceDefinitionId:
+    title: sourceDefinitionId
+    type: string
+  sourceId:
+    title: sourceId
+    type: string
+  workspaceId:
+    title: workspaceId
+    type: string
+  connectionConfiguration:
+    title: connectionConfiguration
+    type: object
+  name:
+    title: name
+    type: string
+  sourceName:
+    title: sourceName
+    type: string
+    

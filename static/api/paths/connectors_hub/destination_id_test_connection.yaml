@@ -1,0 +1,31 @@
+post:
+  description: Tests connection foe the given destination_id
+  operationId: test_destination_connection_api_v2_connectors_destinations__destination_id__test_connection_post
+  parameters:
+    - in: path
+      name: destination_id
+      required: true
+      schema:
+        title: Destination Id
+        type: string
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            $ref: '../../schemas/ResponseTemplateSuccessNoData.yaml'
+      description: Successful Response
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../../schemas/HTTPValidationError.yaml'
+      description: Validation Error
+  summary: Test Destination Connection
+  tags:
+    - connectors

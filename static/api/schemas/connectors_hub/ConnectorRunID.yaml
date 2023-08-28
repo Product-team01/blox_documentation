@@ -1,0 +1,10 @@
+title: Get Connector run by id
+properties:
+  job:
+    title: job
+    type: object
+  attempts:
+    title: attempts
+    type: array
+    items: 
+      type: object

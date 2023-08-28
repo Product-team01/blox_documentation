@@ -1,0 +1,56 @@
+title: Get Connector by id response
+type: object
+properties:
+  connectionId:
+    title: connectionId
+    type: string
+  name:
+    title: Name
+    type: string
+  namespaceDefinition:
+    title: namespaceDefinition
+    type: string
+  namespaceFormat:
+    title: namespaceFormat
+    type: string
+  prefix:
+    title: prefix
+    type: string
+  destinationId:
+    title: destinationId
+    type: string
+  operationIds:
+    title: operationIds
+    type: array
+  schedule:
+    $ref: './Schedule.yaml'
+  scheduleData:
+    $ref: './ScheduleData.yaml'
+  scheduleType:
+    $ref: './scheduleType.yaml'
+  sourceId:
+    title: Sourceid
+    type: string
+  status:
+    $ref: './ConnectorStatus.yaml'
+  syncCatalog:
+    title: syncCatalog
+    type: object
+  sourceCatalogId:
+    title: sourceCatalogId
+    type: string
+  geography:
+    title: geography
+    type: string
+  breakingChange:
+    title: breakingChange
+    type: string
+  notifySchemaChanges:
+    title: notifySchemaChanges
+    type: string
+  notifySchemaChangesByEmail:
+    title: notifySchemaChangesByEmail
+    type: string
+  nonBreakingChangesPreference:
+    title: nonBreakingChangesPreference
+    type: string

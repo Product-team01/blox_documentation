@@ -1,0 +1,12 @@
+title: Get Connector runs
+items: 
+  type: object
+  properties:
+    job:
+      title: job
+      type: object
+    attempts:
+      title: attempts
+      type: array
+      items: 
+        type: object

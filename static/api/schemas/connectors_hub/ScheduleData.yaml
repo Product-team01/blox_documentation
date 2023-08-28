@@ -1,0 +1,7 @@
+properties:
+  basicSchedule:
+    $ref: './Schedule.yaml'
+  cron:
+    $ref: './CronSchedule.yaml'
+title: ScheduleData
+type: object

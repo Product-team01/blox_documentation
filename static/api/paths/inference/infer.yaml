@@ -1,7 +1,7 @@
 post:
   tags:
   - inference
-  summary: Infers tags for any given input data in synchronous or asynchronous mode
+  summary: Infers tags
   description: Infers tags for any given input data in modes defined above.
   operationId: infer
   parameters:

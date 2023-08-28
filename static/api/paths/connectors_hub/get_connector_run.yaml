@@ -1,0 +1,43 @@
+get:
+  description: Gets run of the given connector
+  operationId: get_connector_run_api_v2_connectors_connections__connection_id__run__run_id__get
+  parameters:
+    - in: path
+      name: connection_id
+      required: true
+      schema:
+        title: Connection Id
+        type: string
+    - in: path
+      name: run_id
+      required: true
+      schema:
+        title: Run Id
+        type: string
+    - name: x-correlation-id
+      in: header
+      description: correlation id to track requests
+      schema:
+        type: string
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '../../schemas/ResponseTemplateSuccessNoData.yaml'
+              - type: object
+                properties:
+                  data: 
+                    type: object
+                    $ref: '../../schemas/connectors_hub/ConnectorRunID.yaml'
+      description: Successful Response
+    '422':
+      content:
+        application/json:
+          schema:
+            $ref: '../../schemas/HTTPValidationError.yaml'
+      description: Validation Error
+  summary: Get Connector Run
+  tags:
+    - connectors
