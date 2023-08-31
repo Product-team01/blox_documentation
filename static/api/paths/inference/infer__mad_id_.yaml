@@ -83,7 +83,7 @@ put:
 get:
   tags:
   - inference
-  summary: Get Status
+  summary: Get Status of Async Request
   description: Retrieves status of inference request and if successfully complete returns the inference result
   operationId: getInferenceData
   parameters:

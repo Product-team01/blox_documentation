@@ -30,11 +30,6 @@
           hierarchy format else gives a flat list 
         schema:
           type: boolean
-      - name: pivot
-        in: query
-        description: Boolean to decide if the response should accommodate pivot changes where parent attribute id will be a list. Default value will be false and parent attribute id will be a string
-        schema:
-          type: boolean
     responses:
       '200':
         description: successful operation

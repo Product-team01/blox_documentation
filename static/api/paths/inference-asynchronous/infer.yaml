@@ -1,9 +1,9 @@
 post:
   tags:
   - inference
-  summary: Infers tags
+  summary: Asynchronous Inference
   description: Infers tags for any given input data in modes defined above.
-  operationId: infer
+  operationId: inferAsync
   parameters:
   - name: x-correlation-id
     in: header
@@ -30,9 +30,7 @@ post:
       content:
         application/json:
           schema:
-           oneOf:
-            - $ref:  '../../schemas/inference/InferPostResponse.yaml'
-            - $ref:  '../../schemas/inference/InferAsyncResponse.yaml'
+            $ref:  '../../schemas/inference/InferAsyncResponse.yaml'
     '400':
       description: |
         Bad request:

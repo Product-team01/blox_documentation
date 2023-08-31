@@ -21,8 +21,6 @@ properties:
   attributes:
     type: array
     items:
-      oneOf:
-        - $ref: './taxonomy-attribute-with-id.yaml'
-        - $ref: './taxonomy-attribute-parent-id-list.yaml'
+      $ref: './taxonomy-attribute-with-id.yaml'
   metadata:
     $ref: './taxonomy_metadata.yaml'
