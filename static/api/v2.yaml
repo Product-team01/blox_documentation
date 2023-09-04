@@ -69,14 +69,12 @@ paths:
     $ref: paths/inference-synchronous/infer.yaml
   /api/v1/inference?is_sync=False:
     $ref: paths/inference-asynchronous/infer.yaml
-  /api/v1/inference/{blox_id}:
+  /api/v1/inference/{msd_id}:
     $ref: paths/inference/infer__mad_id_.yaml
 
 
   
 
-
-  
 components:
   parameters:
     $ref: parameters/_index.yaml
