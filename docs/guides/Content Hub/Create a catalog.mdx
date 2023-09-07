@@ -271,7 +271,7 @@ A schema represents how the Catalog data is organized in the database; the relat
     - No special characters other than ‘underscore’ are supported.
 - Attribute - Helps define the data within each field.
   - Choose an attribute from the available list to map it with the corresponding field.
-    - Identifier - Represents the **unique** identifier of an item in the catalog. This is a Mandatory field.
+    - Identifier - Represents the **unique** identifier of each item in the catalog. This is a Mandatory field. Only String data type is supported for identifier attribute.
       - Note:
         - Primary key & identifier can be the same for the catalog.
         - Only 1 field can be assigned to this attribute.
@@ -280,8 +280,10 @@ A schema represents how the Catalog data is organized in the database; the relat
         - This field is used in building recommendations, enrich data and also faceting data.
         - Only 1 field can be assigned to this attribute.
     - Availability - Represents the field that contains information about the item being available or not.
-      - Note: This field is mandatory when using ‘Incremental’ sync mode. When using ‘Full’ sync mode, all the items available in catalog are considered as available.
-      - Only 1 field can be assigned to this attribute.
+      - Note: 
+        -  Only Boolean data type is supported. Example: True or False values
+        -  This field is mandatory when using ‘Incremental’ sync mode. When using ‘Full’ sync mode, all the items available in catalog are considered as available.
+        -  Only 1 field can be assigned to this attribute.
     - Image_url - Represents fields that contain image URLs for an item.
     - Primary_image_url - Represents fields that contains the primary image URLs for an item. This is a mandatory field for retail industry.
       - Note:
