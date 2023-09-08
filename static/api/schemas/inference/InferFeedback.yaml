@@ -15,7 +15,7 @@ properties:
         description: Item's specific column/field value(s)
         type: string
     description: Represents columns/fields of an item as per the catalog' schema.
-  blox_tags:
+  msd_tags:
     type: array
     description: List of all the tags inferred along with details of hierarchy and confidence scores of the tags.
     items:
