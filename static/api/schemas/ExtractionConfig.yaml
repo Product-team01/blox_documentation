@@ -5,6 +5,14 @@ properties:
     title: taxonomy
     type: string
     example: taxonomy
+  parent_taxonomy_id:
+    title: parent_taxonomy_id
+    type: string
+    example: parent_taxonomy_id
+  version:
+    title: version
+    type: string
+    example: version
   graph_id:
     title: graph
     type: string

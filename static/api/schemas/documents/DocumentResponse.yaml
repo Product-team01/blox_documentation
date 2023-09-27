@@ -11,8 +11,13 @@ properties:
     properties:
       internal_document_type_id:
         type: integer
-      external_document_type_id:
-        type: integer
+      external_document_type:
+        type: object
+        properties:
+          id:
+            type: string
+          name:
+            type: string
       document_id:
         type: integer
       results:
@@ -81,7 +86,7 @@ properties:
         type: string
     required:
       - internal_document_type_id
-      - external_document_type_id
+      - external_document_type
       - document_id
       - results
       - metadata

@@ -16,6 +16,12 @@ get:
     required: true
     schema:
       type: string  
+  - name: catalog_id
+    in: path
+    description: unique identifier of the catalog
+    required: true
+    schema:
+      type: string  
   responses:
     '200':
       description: Successfully processed the inference request

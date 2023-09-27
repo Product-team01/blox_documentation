@@ -31,8 +31,13 @@ properties:
             document_link:
               type: string
               format: uri
-            external_document_type_id:
-              type: integer
+            external_document_type:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
             internal_document_type_id:
               type: integer
             name:
@@ -56,7 +61,7 @@ properties:
             - job_id
             - workflow_id
             - document_link
-            - external_document_type_id
+            - external_document_type
             - internal_document_type_id
             - name
             - input

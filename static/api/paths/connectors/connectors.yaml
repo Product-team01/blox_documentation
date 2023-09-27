@@ -1,6 +1,6 @@
 get:
   tags:
-  - connectors
+  - connectors_old
   summary: List supported Connectors
   description: Discover supported connectors with configuration parameters required.
   operationId: list_connectors

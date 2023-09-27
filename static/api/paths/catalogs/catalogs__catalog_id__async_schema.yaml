@@ -10,7 +10,7 @@ parameters:
   in: path
   required: true
 patch:
-  summary: Patch schema for a catalog
+  summary: Patch schema for a catalog 
   operationId: patch-api-v1-catalogs-catalog_id-schema
   responses:
     '202':
@@ -23,7 +23,7 @@ patch:
             - type: object
               properties:
                 data:
-                  $ref: '../../schemas/JobResponse.yaml'
+                  $ref: '../../schemas/CatalogAsyncSchemaOut.yaml'
       headers:
         Location:
           schema:

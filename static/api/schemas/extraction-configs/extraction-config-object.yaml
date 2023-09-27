@@ -30,6 +30,14 @@ properties:
     type: string
     description: unique identifier of a taxonomy
     example: ''
+  parent_taxonomy_id:
+    type: string
+    description: unique identifier of parent taxonomy
+    example: ''
+  version:
+    type: string
+    description: unique identifier of taxonomy version
+    example: ''
   embedding_config_id:
     type: string
     description: unique identifier of an embedding config
