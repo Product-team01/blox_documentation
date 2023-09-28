@@ -45,7 +45,7 @@ security:
   - ApiKeyAuth: []
 tags:
   - name: search
-    description: This section describes the APIs to integrate for product recommendations for any strategy or module.
+    description: This section describes the APIs to integrate for product recommendations for any strategy or module. 
   - name: inference
     description: |
       This section describes the APIs to integrate for inferring tag information for any given input.
@@ -54,7 +54,6 @@ tags:
       * **Synchronous:** For responses that are required in near-real time. This is typically used when there are individual packets that are sent (serial or through parallel calls) which require tagging results per packet. These typically are used in situations where input is either in the form of streams or when the tagging is part of a larger workflow where the content to be tagged flows through the workflow in a non-batched manner.
       * **Asynchronous:** For requests that can be processed asynchronously. The requests will be queued up for processing and the results fetched at a later point in time asynchronously. The responses can be either fetched from our system using a get api, or using a callback integration where our system will invoke your system with the results, when ready.
 paths:
-
   /api/v1/events/track:
     $ref: paths/events/events_track.yaml
 
@@ -73,8 +72,6 @@ paths:
     $ref: paths/inference/infer__mad_id_.yaml
 
 
-  
-
 components:
   parameters:
     $ref: parameters/_index.yaml
@@ -85,5 +82,3 @@ components:
       in: header
   schemas:
     $ref: schemas/_index.yaml
-
-  
