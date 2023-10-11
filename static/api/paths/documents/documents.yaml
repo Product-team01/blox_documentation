@@ -1,4 +1,40 @@
 
+
+post:
+  tags:
+    - Documents
+  summary: Create document
+  description: Create document
+  operationId: CreateDocument
+  parameters:
+  - name: x-correlation-id
+    in: header
+    description: correlation id to track requests
+    schema:
+      type: string
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '../../schemas/documents/CreateDocumentsRequest.yaml'
+          
+
+  responses:
+    '200':
+      description: successful operation
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              request_id:
+                type: string
+              correlation_id:
+                type: string
+              data:
+                $ref: '../../schemas/documents/CreateDocumentsResponse.yaml'
+
+
 get:
   tags:
     - Documents

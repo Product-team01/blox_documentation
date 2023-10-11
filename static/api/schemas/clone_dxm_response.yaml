@@ -4,11 +4,11 @@ properties:
   msg:
     type: string
     description: detailed msg regarding the cloning of dxm entity
-  clone_not_done:
-    type: object
-    additionalProperties:
-      type: array
-      description: config clone which was not done for each enitity
+  clone_errors:
+    type: array
+    items:
+      $ref: "clone_resource_error_response.yaml"
+    description: config clone which was not done for each enitity
 
 
 

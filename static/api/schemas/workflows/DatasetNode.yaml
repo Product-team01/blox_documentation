@@ -27,6 +27,19 @@ properties:
       data in the dataset node.
     title: Dataset Path
     type: string
+  dependent_node_ids:
+    default: []
+    description: This field describes the list of node IDs that are dependent on the
+      current node. This is used to build the workflow DAG.
+    items:
+      type: string
+    title: Dependent Node Ids
+    type: array
+  file_type:
+    allOf:
+    - $ref: ../workflows/FileType.yaml
+    default: delta
+    description: This field describes the file_type of the data in the dataset.
   node_id:
     default: ''
     description: This field describes the identifier of the corresponding dataset

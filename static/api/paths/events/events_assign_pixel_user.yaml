@@ -3,7 +3,7 @@ post:
   - events
   summary: Assign pixel users
   description: Assign a user with pixel flag
-  operationId: pixel_event
+  operationId: set_pixel_user
   parameters:
   - name: x-correlation-id
     in: header

@@ -6,7 +6,7 @@ properties:
     title: Crontimezone
     type: string
 required:
-  - cronExpression
-  - cronTimeZone
+- cronExpression
+- cronTimeZone
 title: CronSchedule
 type: object

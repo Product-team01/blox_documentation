@@ -30,6 +30,8 @@ properties:
         type: string
       output:
         type: object
+      summary:
+        type: object
              
     required:
       - id
@@ -41,6 +43,7 @@ properties:
       - customer_id
       - customer_account
       - output
+      - summary
   request_id:
     type: string
   correlation_id:

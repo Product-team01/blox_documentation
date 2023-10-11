@@ -15,9 +15,9 @@ properties:
     title: Name
     type: string
 required:
-  - name
-  - dockerRepository
-  - dockerImageTag
-  - documentationUrl
+- name
+- dockerRepository
+- dockerImageTag
+- documentationUrl
 title: DestinationDefinition
 type: object

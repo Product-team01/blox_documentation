@@ -1,12 +1,21 @@
-title: Get Connector runs
-items: 
-  type: object
-  properties:
-    job:
-      title: job
-      type: object
-    attempts:
-      title: attempts
-      type: array
-      items: 
-        type: object
+properties:
+  connection_id:
+    title: Connection Id
+    type: string
+  end_time:
+    title: End Time
+    type: string
+  run_id:
+    title: Run Id
+    type: string
+  start_time:
+    title: Start Time
+    type: string
+  status:
+    $ref: ../connectors_hub/ConnectorRunStatus.yaml
+required:
+- run_id
+- connection_id
+- status
+title: ConnectorRun
+type: object

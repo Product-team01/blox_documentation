@@ -482,3 +482,224 @@ ProjectsLearningStatus.yaml:
   $ref: projects/learning-status.yaml
 Segments:
   $ref: segments/segment.yaml
+BodyCreateNodeApiV1NodesPost:
+  $ref: 'workflows/Body_create_node_api_v1_nodes__post.yaml'
+BodyProcessPacketWorkflowApiV1WorkflowProcessPacketPost:
+  $ref: 'workflows/Body_process_packet_workflow_api_v1_workflow_process_packet_post.yaml'
+BodyUpdateNodeApiV1NodesNodeIdPut:
+  $ref: 'workflows/Body_update_node_api_v1_nodes__node_id__put.yaml'
+ColumnDataType:
+  $ref: 'workflows/ColumnDataType.yaml'
+ConnectionNode:
+  $ref: 'workflows/ConnectionNode.yaml'
+ConnectionType:
+  $ref: 'workflows/ConnectionType.yaml'
+Dataset:
+  $ref: 'workflows/Dataset.yaml'
+DatasetColumnRequest:
+  $ref: 'workflows/DatasetColumnRequest.yaml'
+DatasetColumnResponse:
+  $ref: 'workflows/DatasetColumnResponse.yaml'
+DatasetConfigValidation:
+  $ref: 'workflows/DatasetConfigValidation.yaml'
+DatasetCreateResponse:
+  $ref: 'workflows/DatasetCreateResponse.yaml'
+DatasetDeleteResponse:
+  $ref: 'workflows/DatasetDeleteResponse.yaml'
+DatasetListingEntity:
+  $ref: 'workflows/DatasetListingEntity.yaml'
+DatasetListingResponse:
+  $ref: 'workflows/DatasetListingResponse.yaml'
+DatasetListingResponseValidation:
+  $ref: 'workflows/DatasetListingResponseValidation.yaml'
+DatasetNode:
+  $ref: 'workflows/DatasetNode.yaml'
+DatasetReadResponse:
+  $ref: 'workflows/DatasetReadResponse.yaml'
+DatasetSummary:
+  $ref: 'workflows/DatasetSummary.yaml'
+DatasetUnivariateSummary:
+  $ref: 'workflows/DatasetUnivariateSummary.yaml'
+DatasetUpdateResponse:
+  $ref: 'workflows/DatasetUpdateResponse.yaml'
+DatasetValueCount:
+  $ref: 'workflows/DatasetValueCount.yaml'
+DestinationNode:
+  $ref: 'workflows/DestinationNode.yaml'
+FieldMapping:
+  $ref: 'workflows/FieldMapping.yaml'
+FileInfo:
+  $ref: 'workflows/FileInfo.yaml'
+FileType:
+  $ref: 'workflows/FileType.yaml'
+GenericModelTrainConfig:
+  $ref: 'workflows/GenericModelTrainConfig.yaml'
+WorkflowJobConfig:
+  $ref: 'workflows/JobConfig.yaml'
+ModelArtifactConfig:
+  $ref: 'workflows/ModelArtifactConfig.yaml'
+ModelArtifactNode:
+  $ref: 'workflows/ModelArtifactNode.yaml'
+ModelRegistryConfig:
+  $ref: 'workflows/ModelRegistryConfig.yaml'
+ModelTrainNode:
+  $ref: 'workflows/ModelTrainNode.yaml'
+Node:
+  $ref: 'workflows/Node.yaml'
+NodeConfigValidation:
+  $ref: 'workflows/NodeConfigValidation.yaml'
+NodeCreateEntity:
+  $ref: 'workflows/NodeCreateEntity.yaml'
+NodeCreateResponse:
+  $ref: 'workflows/NodeCreateResponse.yaml'
+NodeDeleteResponse:
+  $ref: 'workflows/NodeDeleteResponse.yaml'
+NodeListingEntity:
+  $ref: 'workflows/NodeListingEntity.yaml'
+NodeListingResponse:
+  $ref: 'workflows/NodeListingResponse.yaml'
+NodeListingResponseValidation:
+  $ref: 'workflows/NodeListingResponseValidation.yaml'
+NodeReadResponse:
+  $ref: 'workflows/NodeReadResponse.yaml'
+NodeUpdateResponse:
+  $ref: 'workflows/NodeUpdateResponse.yaml'
+QueryForm:
+  $ref: 'workflows/QueryForm.yaml'
+QueryNode:
+  $ref: 'workflows/QueryNode.yaml'
+SourceNode:
+  $ref: 'workflows/SourceNode.yaml'
+Task:
+  $ref: 'workflows/Task.yaml'
+TrainDataConfig:
+  $ref: 'workflows/TrainDataConfig.yaml'
+TrainModelConfig:
+  $ref: 'workflows/TrainModelConfig.yaml'
+Workflow:
+  $ref: 'workflows/Workflow.yaml'
+WorkflowConfigValidation:
+  $ref: 'workflows/WorkflowConfigValidation.yaml'
+WorkflowCreateResponse:
+  $ref: 'workflows/WorkflowCreateResponse.yaml'
+WorkflowCreationConfig:
+  $ref: 'workflows/WorkflowCreationConfig.yaml'
+WorkflowCreationConfigValidation:
+  $ref: 'workflows/WorkflowCreationConfigValidation.yaml'
+WorkflowDeleteResponse:
+  $ref: 'workflows/WorkflowDeleteResponse.yaml'
+WorkflowDeployEntity:
+  $ref: 'workflows/WorkflowDeployEntity.yaml'
+WorkflowDeployResponse:
+  $ref: 'workflows/WorkflowDeployResponse.yaml'
+WorkflowListingEntity:
+  $ref: 'workflows/WorkflowListingEntity.yaml'
+WorkflowListingResponse:
+  $ref: 'workflows/WorkflowListingResponse.yaml'
+WorkflowListingResponseValidation:
+  $ref: 'workflows/WorkflowListingResponseValidation.yaml'
+WorkflowReadResponse:
+  $ref: 'workflows/WorkflowReadResponse.yaml'
+WorkflowRunResponse:
+  $ref: 'workflows/WorkflowRunResponse.yaml'
+WorkflowSpeedrunFromID:
+  $ref: 'workflows/WorkflowSpeedrunFromID.yaml'
+WorkflowSpeedrunFromSubgraph:
+  $ref: 'workflows/WorkflowSpeedrunFromSubgraph.yaml'
+WorkflowSpeedrunResponse:
+  $ref: 'workflows/WorkflowSpeedrunResponse.yaml'
+WorkflowStatusResponse:
+  $ref: 'workflows/WorkflowStatusResponse.yaml'
+WorkflowUndeployResponse:
+  $ref: 'workflows/WorkflowUndeployResponse.yaml'
+WorkflowUpdateResponse:
+  $ref: 'workflows/WorkflowUpdateResponse.yaml'
+WorkflowValidationEntity:
+  $ref: 'workflows/WorkflowValidationEntity.yaml'
+WorkflowValidationResponse:
+  $ref: 'workflows/WorkflowValidationResponse.yaml'
+CronSchedule:
+  $ref: 'connectors_hub/CronSchedule.yaml'
+ListEgressResponse:
+  $ref: 'connectors_hub/ListEgressResponse.yaml'
+DestinationDefinition:
+  $ref: 'connectors_hub/DestinationDefinition.yaml'
+ListEgressRunsResponse:
+  $ref: 'connectors_hub/ListEgressRunsResponse.yaml'
+UpdateDestination:
+  $ref: 'connectors_hub/UpdateDestination.yaml'
+ConnectorStatus:
+  $ref: 'connectors_hub/ConnectorStatus.yaml'
+ListIngressResponse:
+  $ref: 'connectors_hub/ListIngressResponse.yaml'
+destinationSyncModes:
+  $ref: 'connectors_hub/destinationSyncModes.yaml'
+ResourceRequirements:
+  $ref: 'connectors_hub/ResourceRequirements.yaml'
+scheduleType:
+  $ref: 'connectors_hub/scheduleType.yaml'
+EgressRun:
+  $ref: 'connectors_hub/EgressRun.yaml'
+RunEgressResponse:
+  $ref: 'connectors_hub/RunEgressResponse.yaml'
+GetEgressRunStatusResponse:
+  $ref: 'connectors_hub/GetEgressRunStatusResponse.yaml'
+GetIngressRunStatusResponse:
+  $ref: 'connectors_hub/GetIngressRunStatusResponse.yaml'
+timeUnit:
+  $ref: 'connectors_hub/timeUnit.yaml'
+CreateEgress:
+  $ref: 'connectors_hub/CreateEgress.yaml'
+
+Connector_Out:
+  $ref: 'connectors_hub/Connector.yaml'
+ConnectorRun:
+  $ref: 'connectors_hub/ConnectorRun.yaml'
+GetConnectorRunStatusResponse:
+  $ref: 'connectors_hub/GetConnectorRunStatusResponse.yaml'
+RunIngressResponse:
+  $ref: 'connectors_hub/RunIngressResponse.yaml'
+ConnectorRunStatus:
+  $ref: 'connectors_hub/ConnectorRunStatus.yaml'
+Schedule:
+  $ref: 'connectors_hub/Schedule.yaml'
+ScheduleData:
+  $ref: 'connectors_hub/ScheduleData.yaml'
+CreateConnector:
+  $ref: 'connectors_hub/CreateConnector.yaml'
+SourceDefinition:
+  $ref: 'connectors_hub/SourceDefinition.yaml'
+CreateConnectorResponse:
+  $ref: 'connectors_hub/CreateConnectorResponse.yaml'
+Ingress:
+  $ref: 'connectors_hub/Ingress.yaml'
+UpdateConnector:
+  $ref: 'connectors_hub/UpdateConnector.yaml'
+CreateDestination:
+  $ref: 'connectors_hub/CreateDestination.yaml'
+IngressRun:
+  $ref: 'connectors_hub/IngressRun.yaml'
+CreateDestinationDefinition:
+  $ref: 'connectors_hub/CreateDestinationDefinition.yaml'
+ListConnectorRunsResponse:
+  $ref: 'connectors_hub/ListConnectorRunsResponse.yaml'
+UpdateSource:
+  $ref: 'connectors_hub/UpdateSource.yaml'
+ListConnectorsResponse:
+  $ref: 'connectors_hub/ListConnectorsResponse.yaml'
+CreateIngress:
+  $ref: 'connectors_hub/CreateIngress.yaml'
+CreateSource:
+  $ref: 'connectors_hub/CreateSource.yaml'
+CreateSourceDefinition:
+  $ref: 'connectors_hub/CreateSourceDefinition.yaml'
+streamConfig:
+  $ref: 'connectors_hub/streamConfig.yaml'
+ListIngressRunResponse:
+  $ref: 'connectors_hub/ListIngressRunResponse.yaml'
+syncModes:
+  $ref: 'connectors_hub/syncModes.yaml'
+Egress:
+  $ref: 'connectors_hub/Egress.yaml'
+RunConnectorResponse:
+  $ref: 'connectors_hub/RunConnectorResponse.yaml'

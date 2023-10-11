@@ -1,14 +1,14 @@
 title: clone_metrics_resource_response
 type: object
 required:
-- resource
-- details
+- cloned
+- clone_errors
 properties:
-  resource:
-    title: resource
+  cloned:
     type: string
-    description: resource can be strategy_id, page_id, module_id, experience_id, dcm
-  details:
-    title: details
-    type: string
-    description: details of the cloned resource if properly cloned or not
+    description: detailed msg regarding the cloning of dxm resource
+  clone_errors:
+    type: array
+    items:
+      $ref: "clone_resource_error_response.yaml"
+    description: config clone which was not done for each enitity ( curation_errors | module_errors | strategy_errors | |template_errors )

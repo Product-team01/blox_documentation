@@ -115,11 +115,21 @@ delete:
       type: string
     name: account_id
     in: path
-  requestBody:
-    content:
-      application/json:
-        schema:
-          $ref: '../../schemas/DeleteAccountIn.yaml'
+  - required: false
+    schema:
+      title: delay
+      type: integer
+      description: delay for retries
+      example: 2
+    name: delay
+    in: query
+  - required: false
+    schema:
+      title: retries
+      type: integer
+      example: 0
+    name: retries
+    in: query
   responses:
     "200":
       description: Successful Response

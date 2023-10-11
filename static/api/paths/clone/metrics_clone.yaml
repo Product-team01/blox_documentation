@@ -24,8 +24,14 @@ post:
       content:
         application/json:
           schema:
-            type: array
-            $ref: '../../schemas/clone_metrics_response.yaml'
+            allOf:
+              - $ref: '../../schemas/ResponseTemplateSuccessNoData.yaml'
+              - type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '../../schemas/clone_metrics_response.yaml'
     "400":
       description: Bad Request
       content:

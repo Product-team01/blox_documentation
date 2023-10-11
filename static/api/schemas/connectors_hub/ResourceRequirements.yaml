@@ -12,9 +12,9 @@ properties:
     title: Memory Request
     type: string
 required:
-  - cpu_request
-  - cpu_limit
-  - memory_request
-  - memory_limit
+- cpu_request
+- cpu_limit
+- memory_request
+- memory_limit
 title: ResourceRequirements
 type: object

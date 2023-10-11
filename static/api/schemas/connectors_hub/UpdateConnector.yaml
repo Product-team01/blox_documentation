@@ -3,18 +3,18 @@ properties:
     title: Name
     type: string
   resourceRequirements:
-    $ref: './ResourceRequirements.yaml'
+    $ref: ../connectors_hub/ResourceRequirements.yaml
   schedule:
-    $ref: './Schedule.yaml'
+    $ref: ../connectors_hub/Schedule.yaml
   scheduleData:
-    $ref: './ScheduleData.yaml'
+    $ref: ../connectors_hub/ScheduleData.yaml
   scheduleType:
-    $ref: './scheduleType.yaml'
+    $ref: ../connectors_hub/scheduleType.yaml
   status:
-    $ref: './ConnectorStatus.yaml'
+    $ref: ../connectors_hub/ConnectorStatus.yaml
   streamsToSync:
     items:
-      $ref: './streamConfig.yaml'
+      $ref: ../connectors_hub/streamConfig.yaml
     title: Streamstosync
     type: array
 title: UpdateConnector

@@ -1,7 +1,7 @@
 properties:
   basicSchedule:
-    $ref: './Schedule.yaml'
+    $ref: ../connectors_hub/Schedule.yaml
   cron:
-    $ref: './CronSchedule.yaml'
+    $ref: ../connectors_hub/CronSchedule.yaml
 title: ScheduleData
 type: object

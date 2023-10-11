@@ -10,6 +10,11 @@ get:
     description: correlation id to track requests
     schema:
       type: string
+  - name: platform
+    in: query
+    description: query to distinguish what platform is asking for metadata pages
+    schema:
+      type: string
   responses:
     '200':
       description: Successful Response

@@ -2,7 +2,7 @@ delete:
   tags:
     - internal
   summary: Delete Configurations and Jobs for a Client
-  operationId: enable_api_v1_workflows_personalization_analytics_disable_post
+  operationId: delete_api_v1_workflows_personalization_analytics_disable_post
   parameters:
     - name: x-correlation-id
       in: header

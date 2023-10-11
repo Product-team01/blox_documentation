@@ -9,8 +9,8 @@ properties:
     title: Name
     type: string
 required:
-  - destinationDefinitionId
-  - connectionConfiguration
-  - name
+- destinationDefinitionId
+- connectionConfiguration
+- name
 title: CreateDestination
 type: object

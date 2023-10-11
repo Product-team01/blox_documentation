@@ -1,9 +1,9 @@
 post:
   tags:
   - events
-  summary: Assign pixel users
-  description: Assign a user with pixel flag
-  operationId: pixel_event
+  summary: Fetch all tracked pixel events
+  description: Fetch all success and failure events of pixel users
+  operationId: get_pixel_events
   parameters:
   - name: x-correlation-id
     in: header

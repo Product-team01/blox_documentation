@@ -26,6 +26,14 @@ properties:
       that will be in the model registry.
     title: Dataset Id
     type: string
+  dependent_node_ids:
+    default: []
+    description: This field describes the list of node IDs that are dependent on the
+      current node. This is used to build the workflow DAG.
+    items:
+      type: string
+    title: Dependent Node Ids
+    type: array
   model_id:
     description: This field is a unique identifier of the dataset
     title: Model Id

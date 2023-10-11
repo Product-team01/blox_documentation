@@ -17,6 +17,9 @@ properties:
     - $ref: ../workflows/ModelTrainNode.yaml
     - $ref: ../workflows/ModelArtifactNode.yaml
     - $ref: ../workflows/QueryForm.yaml
+    - $ref: ../workflows/ConnectionNode.yaml
+    - $ref: ../workflows/SourceNode.yaml
+    - $ref: ../workflows/DestinationNode.yaml
     description: This field describes the metadata configurations that pertain to
       a node. The configurations can differ based on the type of the node itself.
     title: Node Config
@@ -49,7 +52,7 @@ properties:
     type: array
   tags:
     default: []
-    description: his field describes any set of tags that can be associated to the
+    description: This field describes any set of tags that can be associated to the
       node.
     items:
       type: string

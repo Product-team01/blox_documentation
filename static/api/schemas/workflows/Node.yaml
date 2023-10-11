@@ -1,4 +1,12 @@
 properties:
+  dependent_node_ids:
+    default: []
+    description: This field describes the list of node IDs that are dependent on the
+      current node. This is used to build the workflow DAG.
+    items:
+      type: string
+    title: Dependent Node Ids
+    type: array
   input_cols:
     default: []
     description: This field stores the details about input columns to a node if it
@@ -12,7 +20,10 @@ properties:
     - $ref: ../workflows/DatasetNode.yaml
     - $ref: ../workflows/ModelTrainNode.yaml
     - $ref: ../workflows/ModelArtifactNode.yaml
-    - $ref: ..//workflows/QueryForm.yaml
+    - $ref: ../workflows/QueryForm.yaml
+    - $ref: ../workflows/ConnectionNode.yaml
+    - $ref: ../workflows/SourceNode.yaml
+    - $ref: ../workflows/DestinationNode.yaml
     description: This field describes the metadata configurations that pertain to
       a node. The configurations can differ based on the type of the node itself.
     title: Node Config

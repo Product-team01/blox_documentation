@@ -6,6 +6,14 @@ properties:
       It represents all the required configurations that the user can provide for
       model training execution.
     title: Config
+  dependent_node_ids:
+    default: []
+    description: This field describes the list of node IDs that are dependent on the
+      current node. This is used to build the workflow DAG.
+    items:
+      type: string
+    title: Dependent Node Ids
+    type: array
   model_type:
     description: This field describes the nature of the model that will be trained.
       Currently, we support training classification models. We will be extending this

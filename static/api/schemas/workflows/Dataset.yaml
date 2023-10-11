@@ -48,6 +48,10 @@ properties:
     description: This field references the path to the raw data for this dataset.
     title: Path To Data
     type: string
+  path_to_sample_data:
+    description: This field references the path to the sample data for this dataset.
+    title: Path To Sample Data
+    type: string
   pointer_to_code:
     description: This field is specifically for derived datasets. This is a pointer
       / reference to the code that generated this data.

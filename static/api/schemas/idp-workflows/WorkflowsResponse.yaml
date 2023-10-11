@@ -26,7 +26,7 @@ properties:
               type: integer
             name:
               type: string
-            jobs:
+            job_count:
               type: integer
             created_ts:
               type: string
@@ -38,7 +38,7 @@ properties:
           required:
             - id
             - name
-            - jobs
+            - job_count
             - created_ts
             - modified_ts
 

@@ -1,15 +1,7 @@
-properties:
-  basic:
-    default: basic
-    title: Basic
-    type: string
-  cron:
-    default: cron
-    title: Cron
-    type: string
-  manual:
-    default: manual
-    title: Manual
-    type: string
+description: An enumeration.
+enum:
+- manual
+- basic
+- cron
 title: scheduleType
-type: object
+type: string

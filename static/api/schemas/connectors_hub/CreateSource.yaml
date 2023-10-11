@@ -9,8 +9,8 @@ properties:
     title: Sourcedefinitionid
     type: string
 required:
-  - sourceDefinitionId
-  - connectionConfiguration
-  - name
+- sourceDefinitionId
+- connectionConfiguration
+- name
 title: CreateSource
 type: object

@@ -19,6 +19,9 @@ properties:
         catalog_id:
           title: Catalog id associated to this curation
           type: string
+        feature:
+          title: curation or shop the look
+          type: string
         metadata:
           title: Other metadata associated with the curation
           type: object
@@ -49,6 +52,8 @@ properties:
         boost_by:
           title: boost params
           type: array
+          items:
+            type: string
       required:
         - catalog_id
         - name

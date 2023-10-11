@@ -5,10 +5,13 @@ properties:
       as per what is entered on the form interface in the canvas.
     items:
       anyOf:
-      - $ref: ../workflows/QueryForm.yaml
       - $ref: ../workflows/DatasetNode.yaml
       - $ref: ../workflows/ModelTrainNode.yaml
       - $ref: ../workflows/ModelArtifactNode.yaml
+      - $ref: ../workflows/QueryForm.yaml
+      - $ref: ../workflows/ConnectionNode.yaml
+      - $ref: ../workflows/SourceNode.yaml
+      - $ref: ../workflows/DestinationNode.yaml
     title: Workflow Form
     type: array
 title: WorkflowCreationConfig

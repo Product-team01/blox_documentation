@@ -19,6 +19,8 @@ properties:
       Products:
         description: return suggestions
         type: array
+        items:
+          type: string
 
 example:
   request_id: 96ee690675f611edae9722bc82d1a906
