@@ -34,6 +34,8 @@ properties:
             modified_ts:
               type: string
               format: date-time
+            is_rule_exists:
+              type: boolean
              
           required:
             - id
@@ -41,6 +43,7 @@ properties:
             - job_count
             - created_ts
             - modified_ts
+            - is_rule_exists
 
     required: [count, results]
   request_id:
