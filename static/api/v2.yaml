@@ -70,12 +70,12 @@ paths:
     $ref: paths/inference-asynchronous/infer.yaml
   /api/v1/inference/{catalog_id}/{msd_id}:
     $ref: paths/inference/infer__mad_id_.yaml
-  # /api/v1/mail/image:
-  #   $ref: paths/mail/image.yaml
-  # /api/v1/mail/link:
-  #   $ref: paths/mail/link.yaml
-  # /api/v1/mail/preview:
-  #   $ref: paths/mail/preview.yaml
+  /api/v1/mail/image:
+    $ref: paths/mail/image.yaml
+  /api/v1/mail/link:
+    $ref: paths/mail/link.yaml
+  /api/v1/mail/preview:
+    $ref: paths/mail/preview.yaml
   # /api/v1/mail/template_preview:
   #   $ref: paths/mail/template_preview.yaml  
 
