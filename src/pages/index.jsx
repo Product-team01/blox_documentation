@@ -10,6 +10,7 @@ import HelpSection from '../components/homepage/HelpSection';
 import Head from '@docusaurus/Head';
 import GuidesAndSamples from '../components/homepage/GuidesAndSamples';
 import SDKs from '../components/homepage/SDKs';
+import DarkLightImage from '../components/homepage/heroimage';
 
 export default function Homepage() {
   return (
@@ -17,7 +18,7 @@ export default function Homepage() {
       <Head>
         <link rel="prefetch" href="/assets/css/elements.min.css" />
       </Head>
-
+      
       <HeroSection />
 
       <GuidesAndSamples />
