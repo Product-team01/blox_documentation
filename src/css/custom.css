@@ -296,7 +296,7 @@ pre.prism-code {
 }
 
 ul.menu__list > li > a.menu__link--active {
-  border-right: 1px solid var(--ifm-color-primary);
+  border-right:  solid var(--ifm-color-primary);
 }
 
 nav.menu {
