@@ -1,111 +1,88 @@
----
-title: 'Creating a Strategy'
-sidebar_position: 3
-sidebar_label: Creating a Strategy
+# Strategy
 
----
+A **strategy** is the foundation for crafting a personalized user experience. It involves tailoring model parameters to meet your needs. This is the first step in creating an experience.
 
+## Getting to Strategy Listing Screen:
 
-
-# Strategy Creation
-
-A 'strategy' is the foundation for crafting a personalized user experience. It involves tailoring model parameters to meet your needs. This is the first step in creating an experience.
-
-## Getting to Strategy Listing Screen
-
- ![Alt text](https://d1r1e7xjkfj7nz.cloudfront.net/s11.png 'a title')
 ### Navigation
 
-- From the Blox Home Page -> Click on Digital Experience Hub to visit the Digital Experience Home Screen.
-- Click on Assets on the navigation bar and select Strategies from the drop-down menu to access the Strategy Listing screen.
-- Alternatively, Hover over the Digital Experience Hub on the navigation bar and click on assets and select Strategy.
+- From the Blox Home Page, click on **Digital Experience Hub** to visit the Digital Experience Home Screen.
+- Click on **Assets** on the navigation bar and select **Strategies** from the drop-down menu to access the Strategy Listing screen.
+- Alternatively, hover over the **Digital Experience Hub** on the navigation bar and click on **Assets** and select **Strategy**.
 
 From the strategy listing screen, you can view, manage existing strategies, or create new strategies.
 
-## Creating a Strategy
+## Creating a Strategy:
 
-After clicking on ‘Create Strategy’ CTA, you will be able to see the Strategy configuration screen.
+1. After clicking on the **Create Strategy** CTA, you will be able to see the Strategy configuration screen.
+2. Give a unique name for the **Strategy**.
+3. Select a catalog which will be used to serve recommendations.
+4. Select a Model.
 
-- Give a unique name for the ‘Strategy’
-- Select a catalog which will be used to serve recommendation
-- Select a Model
+**Note:** Based on the selected model, relevant parameters will be available to configure.
 
-Note: Based on the selected model, relevant parameters will be available to configure.
+### Model Parameters:
 
-### Model Parameters
+- You can configure content attributes by selecting an attribute and giving a priority score to indicate how important the content attribute is to the model.
+- Model parameters, in the context of content like dresses, may include content attributes such as brand, color, and pattern.
 
-You can configure content attributes by selecting an attribute and giving a priority score to indicate how important the content attribute is to the model. Model parameters, in the context of content like dresses, may include content attributes such as brand, color, and pattern. Note: The content attributes that are available are the ‘Indexed Fields’ during catalog onboarding in Content Hub.
+**Note:** The content attributes that are available are the **Indexed Fields** during catalog onboarding in Content Hub.
 
-### Events
+### Events:
 
-You can configure events by selecting the ‘Look Back Period ‘, ‘User Events’ And set priority score for user events
+- You can configure events by selecting the **Look Back Period**, **User Events**, and set a priority score for user events.
+  - On choosing **Add to Cart**, the model displays products added to the customer's cart in the last X days.
+  - On choosing **Add to Wishlist**, the model displays products added to the customer's wishlist in the last X days.
+  - On choosing **Pageview**, the model displays products bought by the customer in the last X days.
+  - On choosing **Buy**, the model displays products viewed by the customer in the last X days.
+  - Time period options include **Daily**, **Monthly**, **Quarterly**, **Weekly**, and **Fortnightly** for the lookback period.
 
-**Event Type**
+### Business Rules (Optional):
 
-- Add to Cart: On choosing Add to Cart, the model displays products added to the customer's cart in the last X days.
-- Add to Wishlist: On choosing Add to wishlist, the model displays products added to the customer's wishlist in the last X days.
-- Pageview: On choosing Buy, the model displays products bought by the customer in the last X days.
-- Buy: On choosing Pageview, the model displays products viewed by the customer in the last X days.
+- Business rules are additional merchandising rules that are used to filter the recommendation output.
+- Business rules consist of **Filtering conditions** and **Apply To** options.
+  - **Filtering Conditions**: The output of the recommendation will be filtered based on the configurations made in **Filtering Conditions**. Choose the content attribute from the drop-down to set the filtering condition. For example, the brand filter lets you limit the range of products included in the recommendation to a particular brand.
+  - **Apply To (Optional)**: This option is used to configure for what content attributes on the source content’s page the filter conditions need to be applied.
+- Click on **Save** to save the configured business rule.
 
-**Lookback Period**
+Let's consider an example for configuring the 'Similar Products' Model in an E-commerce website:
 
-- Daily: Time period of daily lookback period will be past 24 hours.
-- Monthly: Time period of Monthly Lookback period will be past one month.
-- Quarterly: Time period of Quarterly lookback period will be past three months.
-- Weekly: Time period of Weekly lookback period will past 7 days.
-- Fortnightly: Time period of daily lookback period will be past 14 days.
+- **Filtering conditions** is set as - 'Brand' 'is' 'Gucci'
+- **Apply To** is set as - 'Price' 'greater than' '$200' AND 'category' 'is' 'small leather goods, bags'
+- 'Brand', 'Price', 'Category' are the content attributes
+- 'Is', 'greater than' are the operators
+- Gucci, $200, small leather goods, bags are values of the content attributes.
 
-### Business Rules (Optional)
+The business rule, once configured, will be enforced on pages featuring products with a price exceeding $200 and falling within the categories of 'small leather goods' and 'bags.' The filtering criterion is specifically defined as 'Gucci Brand,' ensuring that the recommendation output will consist of products similar to the source product bearing the Gucci Brand.
 
-Business rules are additional merchandising rules that are used to filter the recommendation output. Business rules consist of ‘Filtering conditions’ and ‘Apply To’ options.
+After all the configurations are made, click on the **Create** button at the top-right corner to save the strategy. The strategy will be created and will be available on the strategy listing table.
 
-- Filtering Conditions: The output of the recommendation will be filtered based on the configurations made in ‘Filtering Conditions’. Choose the content attribute from the drop-down to set the filtering condition. For example, the brand filter lets you limit the range of products included in the recommendation to a particular brand.
-- Apply To (Optional): This option is used to configure, for what content attributes on the source content’s page, the filters conditions need to be applied. Click on ‘Save’ to save the configured business Rule.
+**Note:** If you want to retain the configurations made and continue at a later time, click the "Continue Later" button and click on **Save & Exit**. The strategy will be created in draft state.
 
-**Example of Business Rule Configuration**
+## Example for Configuring the 'Similar Products' Model
 
-Let us take an example for configuring the business rules in an E-commerce website.
+### Basic Setup:
 
-- ‘Filtering conditions’ is set as - ‘Brand’ ‘is’ ‘Gucci’
-- ‘Apply To’ is set as - ‘Price’ ‘greater than’ ‘$200’ AND ‘category’ ‘is’ ‘small leather goods, bags’
+#### Configuration
 
-‘Brand’, ‘Price’, ‘Category’ are the content attributes. ‘Is,’ ‘greater than’ are the Operators. Gucci, $200, small leather goods, bags are values of the content attributes. The business rule, once configured, will be enforced on pages featuring products with a price exceeding $200 and falling within the categories of 'small leather goods' and 'bags.' The filtering criterion is specifically defined as 'Gucci Brand,' ensuring that the recommendation output will consist of products similar to the source product bearing the Gucci Brand.
+- **Segment & Boosting Content Attributes**: Segments content based on a particular trait/content attribute. E.g. when the 'contentType' attribute is selected, content that is matching the content attribute of the source content will only be recommended.
+- **Attribute Deduplication**: Select the content attribute(s) to ensure results are unique without duplication among content.
+- **Boost Content Attributes**: Indicate the importance of each content attribute to be boosted in the recommendation result.
 
-After all the configurations are made, Click on the ‘Create’ button at the top-right corner to save the strategy. The strategy will be created and will be available on the strategy listing table.
+#### Personalization:
 
-Note: If you want to retain the configurations made and continue at a later time, click the "Continue Later" button and click on ‘Save & Exit’. The strategy will be created in draft state.
+- **1:1 Personalization**: When enabled, recommendations will be based on each individual user's affinities.
+- **Additional Customization**: Provides additional context to specific categories/segments and its content attributes so that the model takes them into consideration while recommending personalized content.
+- **Content Attributes**: Configure which content attribute should be considered by the model while recommending personalized content.
+- **User Event**: Configure which user event(s) should be considered by the model while recommending content. Indicate its priority score.
 
- ![Alt text](https://d1r1e7xjkfj7nz.cloudfront.net/s22.png 'a title')
+### Advanced Setup:
 
-**Example of Model Configuration**
+#### Configuration
 
-Let's consider an example where we configure the 'Similar Products' Model to establish a strategy for recommending similar products.
-
-## Basic Setup
-
- ![Alt text](https://d1r1e7xjkfj7nz.cloudfront.net/s33.png 'a title')
-
-
-**Configuration** | **Description**
---- | ---
-**Segment & Boosting content Attributes** | Segments content based on a particular trait/content attribute. E.g. when the 'contentType' attribute is selected, content that is matching the content attribute of the source content will only be recommended.
-**Attribute Deduplication** | Select the content attribute(s) to ensure results are unique without duplication among content.
-**Boost Content Attributes** | Indicate the importance of each content attribute to be boosted in the recommendation result.
-
-## Personalization
-
- ![Alt text](https://d1r1e7xjkfj7nz.cloudfront.net/s44.png 'a title')
-
-
-**Configuration** | **Description**
---- | ---
-1:1 Personalization | When enabled, recommendations will be based on each individual user's affinities.
-Additional Customization | Provides additional context to specific categories/segments and its content attributes so that the model takes them into consideration while recommending personalized content.
-Content Attributes | Configure which content attribute should be considered by the model while recommending personalized content.
-User Event | Configure which user event(s) should be considered by the model while recommending content. Indicate its priority score.
-
-## Advanced Setup
-
- ![Alt text](https://d1r1e7xjkfj7nz.cloudfront.net/s55.png 'a title')
-
-
+- **Seasonal Trends**: The recommendation model will boost content based on the selected 'Seasonal Trends' use case.
+- **Attribute Threshold**: Boost content whose content attribute’s confidence score is above this threshold.
+  - E.g., a content with base colors Red & Black has a confidence score of 0.25 & 0.75 respectively. When the content’s Attribute Threshold is set to 0.5, then the recommendation model will take 'Black' as the base color because the confidence score is greater than the threshold value.
+- **Attribute Affinity**: The recommendation model will boost content based on the selected content attribute affinity. The weight given to the field decides how much of the suggested results will be influenced by it.
+- **Discovery (Trending)**: The recommendation model will boost content based on their trends. Weightage given to the field denotes the percentage of results to be returned by the trending algorithm.
+- **Discovery (Rarity Use Case)**: The recommendation model will boost content based on their rarity. Weight given to the field decides the percentage of results to be returned by the rarity algorithm.
