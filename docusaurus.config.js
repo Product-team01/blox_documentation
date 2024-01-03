@@ -426,21 +426,24 @@ const config = {
               value: sdksHTML,
               className: 'dyte-dropdown',
             }, ],
+           
           },
+        
+          
           // {
           //   label: 'REST API',
           //   to: '/api/',
           // },
-          // {
-          //   label: 'Resources',
-          //   type: 'dropdown',
-          //   className: 'dyte-dropdown resources-dropdown',
-          //   items: [{
-          //     type: 'html',
-          //     value: resourcesHTML,
-          //     className: 'dyte-dropdown',
-          //   }, ],
-          // },
+          {
+            label: 'Resources',
+            type: 'dropdown',
+            className: 'dyte-dropdown resources-dropdown',
+            items: [{
+              type: 'html',
+              value: resourcesHTML,
+              className: 'dyte-dropdown',
+            }, ],
+          },
           // {
           //   label: 'Support',
           //   to: 'https://dyte.io/contact',
@@ -456,12 +459,12 @@ const config = {
           //   position: 'right',
           //   className: 'navbar-book-demo',
           // },
-          // {
-          //   label: 'Sign Up',
-          //   href: 'https://dev.dyte.io/register',
-          //   position: 'right',
-          //   className: 'dev-portal-signup dev-portal-link',
-          // },
+          {
+            label: 'Raise A Ticket',
+            href: 'https://dev.dyte.io/register',
+            position: 'right',
+            className: 'dev-portal-signup dev-portal-link',
+          },
         ],
       },
       footer: {
