@@ -6,7 +6,7 @@ import { useMemo } from 'react';
 import { Minus, Plus, Search } from 'react-feather';
 import { paramCase } from 'param-case';
 import ReactMarkdown from 'react-markdown';
-
+import './faq.css'
 import FAQs from '../faq';
 import { useEffect } from 'react';
 import HelpSection from '../components/homepage/HelpSection';
@@ -157,15 +157,14 @@ export default function FAQPage() {
       {/* Hero? */}
       <section className="noise-bg px-6 py-24">
         <div className="mx-auto flex max-w-7xl flex-col place-items-center justify-center">
-          <div className="font-semibold text-zinc-800 dark:text-zinc-300">
+          <div className="FAQheader">
             Frequently Asked Questions
           </div>
           <div className="my-8 text-center text-4xl font-bold leading-tight text-zinc-800 dark:text-zinc-100 lg:text-6xl">
-            <div>Any questions?</div>
-            <div>We got you.</div>
+          
           </div>
           <div className="relative flex w-full max-w-md items-center text-zinc-700 dark:text-white">
-            <Search className="z-10 h-5 w-5 translate-x-1.5" />
+            <Search className="searchIcon" />
             <input
               type="text"
               className="-ml-5 h-10 flex-1 rounded-md border border-solid border-zinc-200 bg-white px-3 pl-8 text-sm text-zinc-700 dark:border-zinc-800 dark:bg-secondary-1000 dark:text-zinc-200"
@@ -177,7 +176,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <section className="mb-20 px-6 py-12">
+      <section className="screenwidth">
         <div className="mx-auto max-w-7xl">
           {query.trim() !== '' ? (
             filteredFAQs.length === 0 ? (
@@ -190,7 +189,7 @@ export default function FAQPage() {
               </div>
             )
           ) : (
-            <div className="inline-flex items-center gap-2 rounded-lg bg-zinc-100 p-2 dark:bg-zinc-800">
+            <div className="tabs">
               <Pill tag="All" />
               {tags.map((tag) => (
                 <Pill tag={tag} key={tag} />
@@ -225,7 +224,7 @@ export default function FAQPage() {
 
       <HelpSection className="relative z-10 border border-solid border-secondary-700" />
 
-      <HomeFooter className="-mt-20 pt-32 pb-12" />
+      
     </Layout>
   );
 }

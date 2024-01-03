@@ -1,395 +1,347 @@
-#
 # Blox FAQs
-#
-
-blox_faq:
-  - question: How can I sign up for Blox?
-    tags: ['Blox', 'Account Setup']
-    answer: "Please reach out to one of our sales representatives via <<insert url or email>>. We’ll get back to you with details."
-
-  - question: Is it possible to have a free trial account for Blox?
-    tags: ['Blox', 'Free Trial']
-    answer: "Sorry, currently, we are not offering a free trial account for Blox. However, you can reach us here at <<insert contact details>>, and we’ll get back to you with a POC."
-
-  - question: How do I set my password for Blox?
-    tags: ['Blox', 'Account Security']
-    answer: "As a part of account setup, we will provide you with login credentials. If you need additional logins created, please reach us at <<insert contact details>>."
-
-  - question: Lost password and can’t sign in?
-    tags: ['Blox', 'Account Security']
-    answer: "You can reset the password for your account by clicking on the ‘Forgot Password’ CTA and following the instructions."
-
-  - question: How can I sign up for a trial?
-    tags: ['Blox', 'Free Trial']
-    answer: "Sorry, currently, we are not offering a free trial account for Blox. However, you can reach us here at <<insert contact details>>, and we’ll get back to you with a POC."
-
-  - question: How can I change my Blox account password?
-    tags: ['Blox', 'Account Security']
-    answer: "You can reset the password for your account by clicking on the ‘Forgot Password’ CTA and following the instructions or from the ‘User Profile’ screen."
-
-  - question: How to add team members to the Blox account?
-    tags: ['Blox', 'Account Management']
-    answer: "Currently, it’s not possible for you to invite more members to Blox. Please reach out to us at <<insert contact details>>, and we’ll be happy to create logins for you."
-
-  - question: What are the user permissions available for a Blox account?
-    tags: ['Blox', 'Account Management']
-    answer: "You can decide between any one of the following options:\n
-      Admin - Can create, delete & update any item.\n
-      Editor - Can create, delete & update any item.\n
-      Viewer -  Can view all item configurations in Blox. Can’t create, delete, or update."
-
-  - question: Can more than one user use a Blox account simultaneously?
-    tags: ['Blox', 'Account Management']
-    answer: "Yes, multiple users can log in with their unique logins and simultaneously access & make changes within Blox."
-
-  - question: How can I pay for Blox?
-    tags: ['Blox', 'Billing & Payment']
-    answer: "Please refer to our payment methods and billing details provided during the account setup process."
-
-  - question: Is there any minimum subscription length?
-    tags: ['Blox', 'Billing & Payment']
-    answer: "Details about the subscription length and plans will be discussed with our sales representatives during the sign-up process."
-
-  - question: What type of payment methods are accepted?
-    tags: ['Blox', 'Billing & Payment']
-    answer: "We accept various payment methods, and the details will be provided during the account setup process."
-
-  - question: Pay a past-due balance to unlock Blox?
-    tags: ['Blox', 'Billing & Payment']
-    answer: "For any billing issues, including past-due balances, please contact our billing department at <<insert contact details>> to resolve the matter."
-
-  - question: Cancel my subscription to Blox?
-    tags: ['Blox', 'Billing & Payment']
-    answer: "To cancel your subscription, please reach out to our customer support team at <<insert contact details>> for assistance."
-
-  - question: Refund on Blox purchase?
-    tags: ['Blox', 'Billing & Payment']
-    answer: "Refund policies will be discussed and provided by our sales representatives during the account setup process. Please contact them for specific details."
-
-  - question: What should I do if there’s an error during payment?
-    tags: ['Blox', 'Billing & Payment']
-    answer: "If you encounter any issues with payment, please contact our support team at <<insert contact details>> for assistance."
-
-  - question: How do I publish a product recommendation strategy on my website?
-    tags: ['Blox', 'DXM']
-    answer: "Please click [here](<<insert url>>) to visit our knowledge base with step-by-step instructions on how to create & publish personalized recommendations."
-
-  - question: Where can I find my recommendation metrics?
-    tags: ['Blox', 'DXM']
-    answer: "You can find all metrics under the ‘Metrics’ section. Navigate to the Metrics section by clicking on ‘Metrics’ in the top navigation bar."
-
-  - question: I have created a strategy but nothing is being displayed on my website?
-    tags: ['Blox', 'DXM']
-    answer: "Please click [here](<<insert url>>) to visit our knowledge base with step-by-step instructions on how to create & publish personalized recommendations."
-
-  - question: The recommendation I have created is working on my website but not on my app. How can I fix it?
-    tags: ['Blox', 'DXM']
-    answer: "Recommendation on the application only works via API implementation. Please click [here](<<insert url>>) to find detailed instructions on how to implement API & receive recommendation data."
-
-  - question: Can I modify/update the parameters?
-    tags: ['Blox', 'DXM']
-    answer: "You can click on the ‘edit’ icon next to 'Configure Model Parameters' within a Strategy configuration. Here you can add or remove any attribute or adjust the slider for the attribute you want to change the score."
-
-  - question: How can I change the weightage score of strategy model parameters?
-    tags: ['Blox', 'DXM']
-    answer: "You can click on the ‘edit’ icon next to 'Configure Model Parameters' within a Strategy configuration and adjust the slider for the attribute you want to change the score."
-
-  - question: Can I modify any live feature item?
-    tags: ['Blox', 'DXM']
-    answer: "Yes, you can edit and update the configuration for any live item. Note: Any changes made to an experiment configuration will automatically reset the test."
-
-  - question: How can I display recommendations only on a page/page type?
-    tags: ['Blox', 'DXM']
-    answer: "You can configure an Experience to render only on a particular page. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: Can I change my template type for an existing template?
-    tags: ['Blox', 'DXM']
-    answer: "No, once a template configuration has been created, it’s not possible to modify the template type. The same template, however, can be used for different types of content."
-
-  - question: Can I change/edit my template while configuring a module?
-    tags: ['Blox', 'DXM']
-    answer: "No, it’s not possible to directly edit a template from within a module config screen."
-
-  - question: Can I link multiple different strategies and/or content on the same template & module?
-    tags: ['Blox', 'DXM']
-    answer: "Yes, as part of module configuration, you can link multiple Strategies and/or Content to the same template."
-
-  - question: How can I set a goal, metric & confidence score for an Experiment?
-    tags: ['Blox', 'DXM']
-    answer: "While configuring an Experience, within the Experiment Settings, you can set a goal, metric & confidence score for a particular Experiment."
-
-  - question: How can I create & publish an experience across all the pages on my website?
-    tags: ['Blox', 'DXM']
-    answer: "Currently, it’s not possible to publish a single Experience across all pages on your website."
-
-  - question: For collaborative filtering strategy, can I combine two different models into the same strategy?
-    tags: ['Blox', 'DXM']
-    answer: "Yes, simply select the models you’d want to be part of the Collaborative Filtering Strategy and finish the strategy setup."
-
-  - question: Why don’t I have ‘Configure model parameters’ & ‘Apply personalization’ options for all strategy models?
-    tags: ['Blox', 'DXM']
-    answer: "Certain models like ‘Recently Engaged’ don’t have the option to ‘Configure model parameters’ because..."
-
-  - question: What is an Experiment?
-    tags: ['Blox', 'DXM']
-    answer: "An Experiment is simply comparing two or more variations of similar items (with or without a Control group) to identify the best possible variation to use on a particular page, placement, and for a particular user group or individual user."
-
-  - question: What does ‘Goal’ & ‘Metric (KPI)’ represent?
-    tags: ['Blox', 'DXM']
-    answer: "Goal & Metric represent the value selected as part of the Experiment setup. They help determine which variation is having the best performance against all others."
-
-  - question: Why is there no data in Blox.ai impact metrics?
-    tags: ['Blox', 'DXM']
-    answer: "If you are a new customer, after initial integration of Blox on your platform, please wait for up to 24 hours before data is made available in the metrics section. For existing customers, if no data is available, it may be due to no item being live during the selected date range. If the problem persists, please reach us at - <<EMAIL>>."
-
-  - question: Where can I find the performance metrics for the strategy I created?
-    tags: ['Blox', 'DXM']
-    answer: "Navigate to DXM -> Metrics -> Performance -> Strategy -> < Search using strategy name>"
-
-  - question: What is API integration? How does it work?
-    tags: ['Blox', 'Integration']
-    answer: "Please click [here](<<insert url>>) to find detailed instructions on how to integrate Blox onto your platform."
-  - question: How can I integrate Blox on my platform?
-    tags: ['Blox', 'Integration']
-    answer: "Please click [here](<<insert url>>) to find detailed instructions on Blox API integrations."
-  - question: What is embed code integration? How does it work?
-    tags: ['Blox', 'Integration']
-    answer: "Please click [here](<<insert url>>) to find detailed instructions on Blox Embed code integration."
-
-  - question: Does Blox have support for Android & iOS integration?
-    tags: ['Blox', 'Integration']
-    answer: "We support Android & iOS via API integration. Please click [here](<<insert url>>) to find detailed instructions on Blox API integrations."
-
-  - question: What is a strategy? How can I create/edit a strategy?
-    tags: ['Blox', 'DXM', 'Strategy']
-    answer: "A Strategy is the foundation that provides the logic behind all personalized recommendations & search content from Blox. Strategy is powered by different base models. Please click [here](<<insert url>>) to find detailed instructions on how to configure a strategy."
-
-  - question: What is a business rule? How can I use it?
-    tags: ['Blox', 'DXM', 'Business Rule']
-    answer: "A Business Rule allows you to filter the results provided by a strategy. You can decide to either include or exclude certain items from your recommendations results. Please click [here](<<insert url>>) to find detailed instructions on how to configure a business rule."
-
-  - question: What is a template?
-    tags: ['Blox', 'DXM', 'Template']
-    answer: "A Template is a structure and layout for how you want recommendations content to look like on your website. You can either use any one of our built-in templates or build your own custom template. Please click [here](<<insert url>>) to find detailed instructions on how to configure a template."
-
-  - question: Can I create my own template on Blox?
-    tags: ['Blox', 'DXM', 'Template']
-    answer: "No, currently it’s not possible to create custom Templates via Blox. Please click [here](<<insert url>>) to contact us to create custom templates for you."
-
-  - question: What is a module? How can I create/edit a module?
-    tags: ['Blox', 'DXM', 'Module']
-    answer: "A Module enables you to combine strategy(s) & content with template and configure the number of results & where on the template should each strategy/content be rendered. Please click [here](<<insert url>>) to find detailed instructions on how to configure a module."
-
-  - question: Can I add more than one template to a module?
-    tags: ['Blox', 'DXM', 'Module']
-    answer: "No, you can only use one template in a module. Please click [here](<<insert url>>) to find detailed instructions on how to configure a module."
-
-  - question: Can I add more than one strategy to a module?
-    tags: ['Blox', 'DXM', 'Module']
-    answer: "Yes, you can use more than one strategy or content in a module. Please click [here](<<insert url>>) to find detailed instructions on how to configure a module."
-
-  - question: Can I use a module to display static content without recommendation or personalization?
-    tags: ['Blox', 'DXM', 'Module']
-    answer: "Yes, you can configure a module purely with content without any strategy. Please click [here](<<insert url>>) to find detailed instructions on how to configure a module."
-
-  - question: What are pages and page types?
-    tags: ['Blox', 'DXM', 'Page']
-    answer: "Page types help us identify between different types of pages. Pages help us understand on which URL or screens to publish experiences."
-
-  - question: How can I configure a page in Blox?
-    tags: ['Blox', 'DXM', 'Page']
-    answer: "Please click [here](<<insert url>>) to find detailed instructions on how to configure a page."
-
-  - question: Is there a limit to the number of pages that can be added to Blox?
-    tags: ['Blox', 'DXM', 'Page']
-    answer: "No, there is no limit to the number of pages that can be configured on Blox."
-
-  - question: What is an experience? How can I create/edit an experience?
-    tags: ['Blox', 'DXM', 'Experience']
-    answer: "An Experience is the final touchpoint, which enables you to link different modules to different placements on a page and configure which user group should see the content, when it should be displayed and on which particular pages should it display. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: Can I add more than one module to an experience?
-    tags: ['Blox', 'DXM', 'Experience']
-    answer: "Yes, you can link multiple modules to an Experience. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: Can I create different experiences for different platforms?
-    tags: ['Blox', 'DXM', 'Experience']
-    answer: "There’s no need for that. With Blox, using one experience you can configure different or the same content between different platforms. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: What is a Journey? How can I create/edit a journey?
-    tags: ['Blox', 'DXM', 'Journey']
-    answer: "<<Insert answer for Journey>>"
-
-  - question: Can I add more than one experience to a journey?
-    tags: ['Blox', 'DXM', 'Journey']
-    answer: "<<Insert answer for Journey>>"
-
-  - question: Can I create different journeys for different platforms?
-    tags: ['Blox', 'DXM', 'Journey']
-    answer: "<<Insert answer for Journey>>"
-
-  - question: Do I need to add all the website pages to my journey?
-    tags: ['Blox', 'DXM', 'Journey']
-    answer: "<<Insert answer for Journey>>"
-
-  - question: Can I perform an experiment between 2 or more modules?
-    tags: ['Blox', 'DXM', 'Experiment']
-    answer: "Yes, you can set up experiments between 2 or more modules and/or Control, but also between 2 or more placements. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experiment."
-
-  - question: Is control mandatory in an Experiment?
-    tags: ['Blox', 'DXM', 'Experiment']
-    answer: "Control is optional during Experience/Experiment setup. If Control is not selected as part of the experiment then confidence is calculated against zero as baseline. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experiment."
-
-  - question: How can I add different placements in an Experience?
-    tags: ['Blox', 'DXM', 'Placement']
-    answer: "Placements are added by adding different modules to the Experience during the setup process. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: Can I add the same module to multiple placements in an Experience?
-    tags: ['Blox', 'DXM', 'Placement']
-    answer: "Yes, you can add the same module to multiple placements in an Experience. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: What is the impact metric in Blox?
-    tags: ['Blox', 'DXM', 'Metrics']
-    answer: "Impact metrics help you understand how Blox is contributing to your website’s KPIs. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: How often are impact metrics updated in Blox?
-    tags: ['Blox', 'DXM', 'Metrics']
-    answer: "Impact metrics are updated every 24 hours in Blox. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: Can I customize the time range for impact metrics in Blox?
-    tags: ['Blox', 'DXM', 'Metrics']
-    answer: "No, currently it’s not possible to customize the time range for impact metrics in Blox. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
-
-  - question: How can I track the performance of a specific module in Blox?
-    tags: ['Blox', 'DXM', 'Metrics']
-    answer: "Please click [here](<<insert url>>) to find detailed instructions on how to track the performance of a specific module in Blox."
-
-  - question: Can I see the performance metrics for a specific strategy in Blox?
-    tags: ['Blox', 'DXM', 'Metrics']
-    answer: "Yes, you can track the performance of a specific strategy under the 'Strategy' tab in Metrics. Please click [here](<<insert url>>) to find detailed instructions on how to track the performance of a specific strategy in Blox."
-
-  - question: How can I monitor the performance of my personalized recommendations in Blox?
-    tags: ['Blox', 'DXM', 'Metrics']
-    answer: "Please click [here](<<insert url>>) to find detailed instructions on how to monitor the performance of your personalized recommendations in Blox."
-  - question: What is Content Hub? What does it do?
-    tags: ['Blox', 'Content Hub']
-    answer: "Content Hub enables you to create Catalogs by uploading data from different data sources, manage Catalog content, and enrich Catalog content."
-
-  - question: How do I create a Catalog?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "You can create a Catalog by clicking on ‘Create New’ in the Explore screen. Please click [here](<<insert url>>) to find detailed instructions on how to create a Catalog."
-
-  - question: How can I access a Catalog’s Content?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "In the Catalog listing table, either click on the Catalog Name or on the ‘info’ icon. Please click [here](<<insert url>>) to find detailed instructions on how to access & manage Catalog content."
-
-  - question: What are the types of data sources supported?
-    tags: ['Blox', 'Content Hub', 'Data Source']
-    answer: "We currently support Amazon S3, SFTP, Kafka, and Manual File upload as data sources. Please check our list of currently supported [here](<<insert url>>)."
-
-  - question: What is a schema?
-    tags: ['Blox', 'Content Hub', 'Schema']
-    answer: "A schema represents how the Catalog data is organized in the database; the relationship between entities like table name, field, attribute, field type etc."
-
-  - question: What is a feed?
-    tags: ['Blox', 'Content Hub', 'Feed']
-    answer: "A feed is a collection of data."
-
-  - question: Can I edit a Catalog after ‘Submit’?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "Yes, click on the ‘edit’ icon next to each Catalog name in the listing table or click on the ‘Update Catalog settings’ CTA from the Catalog Explore screen."
-
-  - question: What are the types of Catalog supported?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "We currently support four types of Catalog: Product Catalog, Document Catalog, Banner Catalog, Offer Catalog."
-
-  - question: What are the segments supported?
-    tags: ['Blox', 'Content Hub', 'Segment']
-    answer: "We currently support a host of segments. Please find the list [here](<<insert url>>)."
-
-  - question: What does ‘Test Connection’ do?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "Test Connection verifies if all the details provided as part of the Catalog creation process are valid. Test connection must be successful to proceed to finish configuring the Catalog."
-
-  - question: Can I change the Primary Key after a Catalog has been Submitted?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "No, it’s not possible to change the Primary key after the Catalog has been submitted."
-
-  - question: What are the data types supported for Primary Key?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "Currently, we only support 'String' data type for the primary key."
-
-  - question: When will the catalog sync during initial setup? Is it based on the sync schedule?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "Initial sync happens immediately. Following ones happen according to the schedule."
-
-  - question: What are the sync options available for a Catalog?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "We support a variety of sync & schedule options as part of the Catalog. Please click [here](<<insert url>>) to learn more about sync."
-
-  - question: If a data file from a customer has duplicate column headers, what is the default behavior in handling it?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "If they are mapped to different fields, then they will be treated as different."
-
-  - question: How can I update the mapping after a Catalog has been Submitted?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "Yes, click on the ‘edit’ icon next to each Catalog name in the listing table or click on the ‘Update Catalog settings’ CTA from the Catalog Explore screen. And update mapping as required."
-
-  - question: How can I enrich a Catalog Content?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "In the Enrich screen, click on ‘Create New’ to create a Project for a Catalog & enrich the content."
-
-  - question: Can I create a Project without a Catalog?
-    tags: ['Blox', 'Content Hub', 'Project']
-    answer: "No, it’s not possible to create a Project without a Catalog."
-
-  - question: Can I use multiple Catalogs in the same Project?
-    tags: ['Blox', 'Content Hub', 'Project']
-    answer: "No, a Project can be created for only one Catalog."
-
-  - question: If a Catalog is used in multiple Projects & Strategies, What happens to all the entities if the Catalog is deleted?
-    tags: ['Blox', 'Content Hub', 'Catalog', 'Project', 'Strategy']
-    answer: "Only the Catalog is deleted, Projects & Strategies are unaffected. However, the Project cannot be used to further enrich new content, already enriched content is still available for access."
-
-  - question: What does Index in catalog creation do? Where is it used in the tool?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "Index means that the fields will be indexed in the database & filtering operations are enabled. Fields will be available for querying (to retrieve metadata)."
-
-  - question: What does Facet in catalog creation do? Where is it used in the tool?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "Facet enables grouping and sorting operations on the field. Any field that is faceted will show up on the list of facets (typically found on the left side of a search result page) that people can use to narrow down the search results."
-
-  - question: What does Search in catalog creation do? Where is it used in the tool?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "The data in this field will show up in search results."
-
-  - question: What does Personalize in catalog creation do? Where is it used in the tool?
-    tags: ['Blox', 'Content Hub', 'Catalog']
-    answer: "These fields can be used for personalization strategies."
-
-  - question: What is a Taxonomy?
-    tags: ['Blox', 'Content Hub', 'Taxonomy']
-    answer: "A Taxonomy is a hierarchical structure of attributes to tag the data against. The taxonomy provides a structure and flow to organize your data from root to leaf nodes."
-
-  - question: What is Feed Sampling?
-    tags: ['Blox', 'Content Hub', 'Feed']
-    answer: "Every time a feed is imported into a Project, only a random sample of 3000 items is digested for enrichment."
-
-  - question: What is short term learning (STL)?
-    tags: ['Blox', 'Content Hub', 'Learning']
-    answer: "After labeling a few data points, clicking on the STL icon will apply the learnings to all data points in the taxonomy."
-
-  - question: What is long term learning?
-    tags: ['Blox', 'Content Hub', 'Learning']
-    answer: "Long term learning is a continuous process where the system learns and adapts to changes in user behavior over an extended period."
-
-  - question: How do I Deploy a Project Model?
-    tags: ['Blox', 'Content Hub', 'Project', 'Model']
-    answer: "Please click [here](<<insert url>>) to find detailed instructions on how to deploy a Project Model."
-
-  - question: What is a Label?
-    tags: ['Blox', 'Content Hub', 'Label']
-    answer: "A label is metadata assigned to an entity in the taxonomy for enrichment purposes. It helps in training the system for better personalization."
-    
-  
 
+# Blox FAQs
+
+- question: How can I sign up for Blox?
+  tags: ['Blox', 'Account']
+  answer: Please reach out to one of our sales representatives via <<insert url or email>>. We’ll get back to you with details.
+
+- question: Is it possible to have a free trial account for Blox?
+  tags: ['Blox', 'Free Trial']
+  answer: Sorry, currently, we are not offering a free trial account for Blox. However, you can reach us here at <<insert contact details>>, and we’ll get back to you with a POC.
+
+- question: How do I set my password for Blox?
+  tags: ['Blox', 'Account Security']
+  answer: As a part of account setup, we will provide you with login credentials. If you need additional logins created, please reach us at <<insert contact details>>.
+
+- question: Lost password and can’t sign in?
+  tags: ['Blox', 'Account Security']
+  answer: You can reset the password for your account by clicking on the ‘Forgot Password’ CTA and following the instructions.
+
+- question: How can I sign up for a trial?
+  tags: ['Blox', 'Free Trial']
+  answer: Sorry, currently, we are not offering a free trial account for Blox. However, you can reach us here at <<insert contact details>>, and we’ll get back to you with a POC.
+
+- question: How can I change my Blox account password?
+  tags: ['Blox', 'Account Security']
+  answer: You can reset the password for your account by clicking on the ‘Forgot Password’ CTA and following the instructions or from the ‘User Profile’ screen.
+
+- question: How to add team members to the Blox account?
+  tags: ['Blox', 'Account Management']
+  answer: Currently, it’s not possible for you to invite more members to Blox. Please reach out to us at <<insert contact details>>, and we’ll be happy to create logins for you.
+
+- question: What are the user permissions available for a Blox account?
+  tags: ['Blox', 'Account Management']
+  answer: You can decide between any one of the following options.
+     Admin - Can create, delete & update any item.
+     Editor - Can create, delete & update any item.
+     Viewer -  Can view all item configurations in Blox. Can’t create, delete, or update.
+
+- question: Can more than one user use a Blox account simultaneously?
+  tags: ['Blox', 'Account Management']
+  answer: Yes, multiple users can log in with their unique logins and simultaneously access & make changes within Blox.
+
+# DXM FAQs
+
+- question: I have created a strategy but nothing is being displayed on my website?
+  tags: ['Blox', 'DXM']
+  answer: "Please click [here](<<insert url>>) to visit our knowledge base with step-by-step instructions on how to create & publish personalized recommendations."
+
+- question: The recommendation I have created is working on my website but not on my app. How can I fix it?
+  tags: ['Blox', 'DXM']
+  answer: "Recommendation on the application only works via API implementation. Please click [here](<<insert url>>) to find detailed instructions on how to implement API & receive recommendation data."
+
+- question: Can I modify/update the parameters?
+  tags: ['Blox', 'DXM']
+  answer: "You can click on the ‘edit’ icon next to “Configure Model Parameters” within a Strategy configuration. Here you can add or remove any attribute or even adjust the slider for the attribute you want to change the score."
+
+- question: How can I change the weightage score of strategy model parameters?
+  tags: ['Blox', 'DXM']
+  answer: "You can click on the ‘edit’ icon next to “Configure Model Parameters” within a Strategy configuration. Adjust the slider for the attribute you want to change the score."
+
+- question: Can I modify any live feature item?
+  tags: ['Blox', 'DXM']
+  answer: "Yes, you can edit and update the configuration for any live item. Note: Any changes made to an experiment configuration will automatically reset the test."
+
+- question: How can I display recommendations only on a page/page type?
+  tags: ['Blox', 'DXM']
+  answer: "You can configure an Experience to render only on a particular page. Please click [here](<<insert url>>) to find detailed instructions on how to configure an Experience."
+
+- question: Can I change my template type for an existing template?
+  tags: ['Blox', 'DXM']
+# DXM FAQs (continued)
+
+- question: Can I change/edit my template while configuring a module?
+  tags: ['Blox', 'DXM']
+  answer: "No, it’s not possible to directly edit a template while from within a module config screen."
+
+- question: Can I link multiple different strategies and/or content on the same template & module?
+  tags: ['Blox', 'DXM']
+  answer: "Yes, as part of module configuration, you can link multiple Strategies and/or Content to the same template."
+
+- question: How can I set a goal, metric & confidence score for an Experiment?
+  tags: ['Blox', 'DXM']
+  answer: "While configuring an Experience, within the Experiment Settings, you can set a goal, metric & confidence score for a particular Experiment."
+
+- question: How can I create & publish an experience across all the pages on my website?
+  tags: ['Blox', 'DXM']
+  answer: "Currently, it’s not possible to publish a single Experience across all pages on your website."
+
+- question: For collaborative filtering strategy, can I combine two different models into the same strategy?
+  tags: ['Blox', 'DXM']
+  answer: "Yes, simply select the models you’d want to be part of the Collaborative Filtering Strategy and finish the strategy setup."
+
+- question: What is an Experiment?
+  tags: ['Blox', 'DXM']
+  answer: "An Experiment is simply comparing two or more variations of similar items (with or without a Control group) to identify the best possible variation to use on a particular page, placement, and for a particular user group or individual user."
+
+- question: What does ‘Goal’ & ‘Metric (KPI)’ represent?
+  tags: ['Blox', 'DXM']
+  answer: "Goal & Metric represent the value selected as part of the Experiment setup. They help determine which variation is having the best performance against all others."
+
+- question: Why is there no data in Blox.ai impact metrics?
+  tags: ['Blox', 'DXM', 'Metrics']
+  answer: "If you are a new customer, after the initial integration of Blox on your platform, please wait for up to 24 hours before data is made available in the metrics section."
+
+- question: Where can I find the performance metrics for the strategy I created?
+  tags: ['Blox', 'DXM', 'Metrics', 'Performance']
+  answer: "Navigate to DXM -> Metrics -> Performance -> Strategy -> << Search using strategy name >>"
+
+# Content Hub FAQs
+
+- question: What is Content Hub? What does it do?
+  tags: ['Blox', 'Content Hub']
+  answer: "Content Hub enables you to create Catalogs by uploading data from different datasources, manage Catalog content, and enrich Catalog content."
+
+- question: How do I create a Catalog?
+  tags: ['Blox', 'Content Hub', 'Catalog']
+  answer: "You can create a Catalog by clicking on ‘Create New’ in the Explore screen. Click [here](<<insert url>>) to find detailed instructions on how to create a Catalog."
+
+- question: How can I access a Catalog’s Content?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Content']
+  answer: "In the Catalog listing table, either click on the Catalog Name or on the ‘info’ icon. Click [here](<<insert url>>) to find detailed instructions on how to access & manage Catalog content."
+
+- question: What are the types of data sources supported?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Data Sources']
+  answer: "We currently support Amazon S3, SFTP, Kafka, and Manual File upload."
+
+- question: Can I upload data from a Shopify feed?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Data Sources']
+  answer: "No, we currently don’t support Shopify feed as a data source."
+
+- question: What is a schema?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Schema']
+  answer: "A schema represents how the Catalog data is organized in the database; the relationship between entities like table name, field, attribute, field type, etc."
+
+- question: What is a feed?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Feed']
+  answer: "A feed is a collection of data."
+
+- question: Can I edit a Catalog after ‘Submit’?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Editing']
+  answer: "Yes, click on the ‘edit’ icon next to each Catalog name in the listing table or click on the ‘Update Catalog settings’ CTA from the Catalog Explore screen."
+
+- question: What are the types of Catalog supported?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Types']
+  answer: "We currently support four types of Catalog: Product Catalog, Document Catalog, Banner Catalog, and Offer Catalog."
+
+- question: What are the segments supported?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Segments']
+  answer: "We currently support a host of segments. Please find the list [here](<<insert url>>)."
+
+- question: What does ‘Test Connection’ do?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Connection']
+  answer: "Test Connection verifies if all the details provided as part of the Catalog creation process are valid. Test connection must be successful in order to proceed to finish configuring the Catalog."
+
+- question: Can I change the Primary Key after a Catalog has been Submitted?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Primary Key']
+  answer: "No, it’s not possible to change the Primary key after the Catalog has been submitted."
+
+- question: What are the data types supported for Primary Key?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Primary Key', 'Data Types']
+  answer: "Currently, we only support “String” data type for the primary key."
+
+- question: When will the catalog sync during initial setup? Is it based on the sync schedule?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Sync']
+  answer: "Initial sync happens immediately, Following ones happen according to schedule."
+
+- question: What are the sync options available for a Catalog?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Sync']
+  answer: "We support a variety of sync & schedule options as part of the Catalog. Please click [here](<<insert url>>) to learn more about sync."
+
+- question: If a data file from a customer has duplicate column headers, what is the default behavior in handling it?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Handling']
+  answer: "If they are duplicated, the system takes them as they are. There is no default merging or any other method applied."
+
+# Audience Hub FAQs
+
+- question: What is Audience Hub?
+  tags: ['Blox', 'Audience Hub']
+  answer: "Audience Hub is where you can manage your audience, segment your users, and create personalized experiences for them."
+
+- question: How to create a new audience?
+
+  tags: ['Blox', 'Audience Hub', 'Audience']
+  answer: "To create a new audience, click on 'Create New Audience' in the Audience listing table. Click [here](<<insert url>>) to find detailed instructions on how to create a new audience."
+
+- question: How to add users-create a custom user segment?
+  tags: ['Blox', 'Audience Hub', 'User Segment']
+  answer: "You can add users or create a custom user segment by selecting the 'Add Users' option within the Audience details page. Click [here](<<insert url>>) to find detailed instructions on how to add users or create a custom user segment."
+
+- question: What are the types of user segments supported?
+  tags: ['Blox', 'Audience Hub', 'User Segment', 'Types']
+  answer: "We currently support segments based on user attributes, events, and custom rules. Click [here](<<insert url>>) to find more information about the types of user segments supported."
+
+- question: How to add a new attribute to an audience?
+  tags: ['Blox', 'Audience Hub', 'Attribute']
+  answer: "You can add a new attribute by navigating to the 'Attributes' section within the Audience details page. Click [here](<<insert url>>) for step-by-step instructions on how to add a new attribute."
+
+- question: Can I edit the attributes of an audience after creating it?
+  tags: ['Blox', 'Audience Hub', 'Attribute', 'Editing']
+  answer: "Yes, you can edit the attributes by navigating to the 'Attributes' section within the Audience details page. Click [here](<<insert url>>) for detailed instructions on how to edit audience attributes."
+
+- question: What is a default audience?
+  tags: ['Blox', 'Audience Hub', 'Default Audience']
+  answer: "A default audience is a segment that includes all users by default. It can be used as a fallback when no other segments match."
+
+- question: How to delete an audience?
+  tags: ['Blox', 'Audience Hub', 'Deletion']
+  answer: "To delete an audience, go to the Audience details page and click on the 'Delete Audience' option. Click [here](<<insert url>>) for step-by-step instructions on how to delete an audience."
+# DXM FAQs (continued)
+
+- question: Can I change/edit my template while configuring a module?
+  tags: ['Blox', 'DXM']
+  answer: "No, it’s not possible to directly edit a template while from within a module config screen."
+
+- question: Can I link multiple different strategies and/or content on the same template & module?
+  tags: ['Blox', 'DXM']
+  answer: "Yes, as part of module configuration, you can link multiple Strategies and/or Content to the same template."
+
+- question: How can I set a goal, metric & confidence score for an Experiment?
+  tags: ['Blox', 'DXM']
+  answer: "While configuring an Experience, within the Experiment Settings, you can set a goal, metric & confidence score for a particular Experiment."
+
+- question: How can I create & publish an experience across all the pages on my website?
+  tags: ['Blox', 'DXM']
+  answer: "Currently, it’s not possible to publish a single Experience across all pages on your website."
+
+- question: For collaborative filtering strategy, can I combine two different models into the same strategy?
+  tags: ['Blox', 'DXM']
+  answer: "Yes, simply select the models you’d want to be part of the Collaborative Filtering Strategy and finish the strategy setup."
+
+- question: What is an Experiment?
+  tags: ['Blox', 'DXM']
+  answer: "An Experiment is simply comparing two or more variations of similar items (with or without a Control group) to identify the best possible variation to use on a particular page, placement, and for a particular user group or individual user."
+
+- question: What does ‘Goal’ & ‘Metric (KPI)’ represent?
+  tags: ['Blox', 'DXM']
+  answer: "Goal & Metric represent the value selected as part of the Experiment setup. They help determine which variation is having the best performance against all others."
+
+- question: Why is there no data in Blox.ai impact metrics?
+  tags: ['Blox', 'DXM', 'Metrics']
+  answer: "If you are a new customer, after the initial integration of Blox on your platform, please wait for up to 24 hours before data is made available in the metrics section."
+
+- question: Where can I find the performance metrics for the strategy I created?
+  tags: ['Blox', 'DXM', 'Metrics', 'Performance']
+  answer: "Navigate to DXM -> Metrics -> Performance -> Strategy -> << Search using strategy name >>"
+
+# Content Hub FAQs
+
+- question: What is Content Hub? What does it do?
+  tags: ['Blox', 'Content Hub']
+  answer: "Content Hub enables you to create Catalogs by uploading data from different datasources, manage Catalog content, and enrich Catalog content."
+
+- question: How do I create a Catalog?
+  tags: ['Blox', 'Content Hub', 'Catalog']
+  answer: "You can create a Catalog by clicking on ‘Create New’ in the Explore screen. Click [here](<<insert url>>) to find detailed instructions on how to create a Catalog."
+
+- question: How can I access a Catalog’s Content?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Content']
+  answer: "In the Catalog listing table, either click on the Catalog Name or on the ‘info’ icon. Click [here](<<insert url>>) to find detailed instructions on how to access & manage Catalog content."
+
+- question: What are the types of data sources supported?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Data Sources']
+  answer: "We currently support Amazon S3, SFTP, Kafka, and Manual File upload."
+
+- question: Can I upload data from a Shopify feed?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Data Sources']
+  answer: "No, we currently don’t support Shopify feed as a data source."
+
+- question: What is a schema?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Schema']
+  answer: "A schema represents how the Catalog data is organized in the database; the relationship between entities like table name, field, attribute, field type, etc."
+
+- question: What is a feed?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Feed']
+  answer: "A feed is a collection of data."
+
+- question: Can I edit a Catalog after ‘Submit’?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Editing']
+  answer: "Yes, click on the ‘edit’ icon next to each Catalog name in the listing table or click on the ‘Update Catalog settings’ CTA from the Catalog Explore screen."
+
+- question: What are the types of Catalog supported?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Types']
+  answer: "We currently support four types of Catalog: Product Catalog, Document Catalog, Banner Catalog, and Offer Catalog."
+
+- question: What are the segments supported?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Segments']
+  answer: "We currently support a host of segments. Please find the list [here](<<insert url>>)."
+
+- question: What does ‘Test Connection’ do?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Connection']
+  answer: "Test Connection verifies if all the details provided as part of the Catalog creation process are valid. Test connection must be successful in order to proceed to finish configuring the Catalog."
+
+- question: Can I change the Primary Key after a Catalog has been Submitted?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Primary Key']
+  answer: "No, it’s not possible to change the Primary key after the Catalog has been submitted."
+
+- question: What are the data types supported for Primary Key?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Primary Key', 'Data Types']
+  answer: "Currently, we only support “String” data type for the primary key."
+
+- question: When will the catalog sync during initial setup? Is it based on the sync schedule?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Sync']
+  answer: "Initial sync happens immediately, Following ones happen according to schedule."
+
+- question: What are the sync options available for a Catalog?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Sync']
+  answer: "We support a variety of sync & schedule options as part of the Catalog. Please click [here](<<insert url>>) to learn more about sync."
+
+- question: If a data file from a customer has duplicate column headers, what is the default behavior in handling it?
+  tags: ['Blox', 'Content Hub', 'Catalog', 'Handling']
+  answer: "If they are duplicated, the system takes them as they are. There is no default merging or any other method applied."
+
+# Audience Hub FAQs
+
+- question: What is Audience Hub?
+  tags: ['Blox', 'Audience Hub']
+  answer: "Audience Hub is where you can manage your audience, segment your users, and create personalized experiences for them."
+
+- question: How to create a new audience?
+
+  tags: ['Blox', 'Audience Hub', 'Audience']
+  answer: "To create a new audience, click on 'Create New Audience' in the Audience listing table. Click [here](<<insert url>>) to find detailed instructions on how to create a new audience."
+
+- question: How to add users-create a custom user segment?
+  tags: ['Blox', 'Audience Hub', 'User Segment']
+  answer: "You can add users or create a custom user segment by selecting the 'Add Users' option within the Audience details page. Click [here](<<insert url>>) to find detailed instructions on how to add users or create a custom user segment."
+
+- question: What are the types of user segments supported?
+  tags: ['Blox', 'Audience Hub', 'User Segment', 'Types']
+  answer: "We currently support segments based on user attributes, events, and custom rules. Click [here](<<insert url>>) to find more information about the types of user segments supported."
+
+- question: How to add a new attribute to an audience?
+  tags: ['Blox', 'Audience Hub', 'Attribute']
+  answer: "You can add a new attribute by navigating to the 'Attributes' section within the Audience details page. Click [here](<<insert url>>) for step-by-step instructions on how to add a new attribute."
+
+- question: Can I edit the attributes of an audience after creating it?
+  tags: ['Blox', 'Audience Hub', 'Attribute', 'Editing']
+  answer: "Yes, you can edit the attributes by navigating to the 'Attributes' section within the Audience details page. Click [here](<<insert url>>) for detailed instructions on how to edit audience attributes."
+
+- question: What is a default audience?
+  tags: ['Blox', 'Audience Hub', 'Default Audience']
+  answer: "A default audience is a segment that includes all users by default. It can be used as a fallback when no other segments match."
+
+- question: How to delete an audience?
+  tags: ['Blox', 'Audience Hub', 'Deletion']
+  answer: "To delete an audience, go to the Audience details page and click on the 'Delete Audience' option. Click [here](<<insert url>>) for step-by-step instructions on how to delete an audience."
