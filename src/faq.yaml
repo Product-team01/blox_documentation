@@ -185,3 +185,7 @@
 - question: How to add users-create a custom user segment?
   tags: ['Blox', 'Audience Hub']
   answer: "You can add users or create a custom user segment by selecting the 'Add Users' option within the Audience details page."
+
+- question: What are the metrics that can be optimized for experiments?
+  tags: ['Blox', 'DXM']
+  answer: Conversion rate, Average Order Value (AOV), Average Revenue Per User (ARPU), User Engagement Rate, Average Order Size (AOS), and Click-Through Rate (CTR) are the key metrics that can be optimized for experiments.
