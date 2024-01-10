@@ -189,3 +189,8 @@
 - question: What are the metrics that can be optimized for experiments?
   tags: ['Blox', 'DXM']
   answer: Conversion rate, Average Order Value (AOV), Average Revenue Per User (ARPU), User Engagement Rate, Average Order Size (AOS), and Click-Through Rate (CTR) are the key metrics that can be optimized for experiments.
+
+
+- question: What is a Taxonomy?
+  tags: ['Taxonomy']
+  answer: A Taxonomy is a hierarchical structure of attributes used to tag data. It provides a structured flow to organize data from root to leaf nodes. For instance, 'color' is an attribute, and 'red,' 'blue,' etc., are the actual colors within this taxonomy.
