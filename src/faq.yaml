@@ -192,8 +192,11 @@
 
 
 - question: What is a Taxonomy?
-  tags: ['Taxonomy']
+  tags: ['DXM']
   answer: A Taxonomy is a hierarchical structure of attributes used to tag data. It provides a structured flow to organize data from root to leaf nodes. For instance, 'color' is an attribute, and 'red,' 'blue,' etc., are the actual colors within this taxonomy.
 - question: What is an Audience?
-  tags: ['audience']
+  tags: ['Audience Hub']
   answer: An audience refers to a specific segment of users who share common attributes and behavior patterns. For example, desktop visitors, high-value spenders.
+- question: What is a Business Rule, and how can I use it?
+  tags: ['DXM']
+  answer: A business rule enables you to filter the results provided by a strategy. You have the flexibility to include or exclude specific items from your recommendation results. For detailed instructions on configuring a business rule, please refer to [this guide](<<insert url>>).
