@@ -1,193 +1,193 @@
-# Blox FAQs
+# Vue FAQs
 
-- question: How can I sign up for Blox?
-  tags: ['Blox']
+- question: How can I sign up for Vue?
+  tags: ['Vue']
   answer: Please reach out to one of our sales representatives via [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com). We’ll get back to you with details.
 
-- question: Is it possible to have a free trial account for Blox?
-  tags: ['Blox']
-  answer: Sorry, currently, we are not offering a free trial account for Blox. However, you can reach us at [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com), and we’ll get back to you with a POC.
+- question: Is it possible to have a free trial account for Vue?
+  tags: ['Vue']
+  answer: Sorry, currently, we are not offering a free trial account for Vue. However, you can reach us at [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com), and we’ll get back to you with a POC.
 
-- question: How do I set my password for Blox?
-  tags: ['Blox']
+- question: How do I set my password for Vue?
+  tags: ['Vue']
   answer: As a part of account setup, we will provide you with login credentials. If you need additional logins created, please reach us at [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com).
 
 - question: Lost password and can’t sign in?
-  tags: ['Blox']
+  tags: ['Vue']
   answer: You can reset the password for your account by clicking on the ‘Forgot Password’ CTA and following the instructions.
 
 - question: How can I sign up for a trial?
-  tags: ['Blox']
-  answer: Sorry, currently, we are not offering a free trial account for Blox. However, you can reach us at [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com), and we’ll get back to you with a POC.
+  tags: ['Vue']
+  answer: Sorry, currently, we are not offering a free trial account for Vue. However, you can reach us at [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com), and we’ll get back to you with a POC.
 
-- question: How can I change my Blox account password?
-  tags: ['Blox']
+- question: How can I change my Vue account password?
+  tags: ['Vue']
   answer: You can reset the password for your account by clicking on the ‘Forgot Password’ CTA and following the instructions or from the ‘User Profile’ screen.
 
-- question: How to add team members to the Blox account?
-  tags: ['Blox']
-  answer: Currently, it’s not possible for you to invite more members to Blox. Please reach out to us at [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com), and we’ll be happy to create logins for you.
+- question: How to add team members to the Vue account?
+  tags: ['Vue']
+  answer: Currently, it’s not possible for you to invite more members to Vue. Please reach out to us at [vuesupport@madstreetden.com](mailto:vuesupport@madstreetden.com), and we’ll be happy to create logins for you.
 
-- question: What are the user permissions available for a Blox account?
-  tags: ['Blox']
+- question: What are the user permissions available for a Vue account?
+  tags: ['Vue']
   answer: You can decide between any one of the following options.
      Admin - Can create, delete & update any item.
      Editor - Can create, delete & update any item.
-     Viewer -  Can view all item configurations in Blox. Can’t create, delete, or update.
+     Viewer -  Can view all item configurations in Vue. Can’t create, delete, or update.
 
-- question: Can more than one user use a Blox account simultaneously?
-  tags: ['Blox']
-  answer: Yes, multiple users can log in with their unique logins and simultaneously access & make changes within Blox.
+- question: Can more than one user use a Vue account simultaneously?
+  tags: ['Vue']
+  answer: Yes, multiple users can log in with their unique logins and simultaneously access & make changes within Vue.
 
 # DXM FAQs
 
 - question: I have created a strategy but nothing is being displayed on my website?
-  tags: ['Blox']
+  tags: ['Vue']
   answer: "Please visit our knowledge base for step-by-step instructions on how to create & publish personalized recommendations."
 
 - question: The recommendation I have created is working on my website but not on my app. How can I fix it?
-  tags: ['Blox']
+  tags: ['Vue']
   answer: "Recommendation on the application only works via API implementation. Find detailed instructions on how to implement API & receive recommendation data."
 
 - question: Can I modify/update the parameters?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "You can click on the ‘edit’ icon next to “Configure Model Parameters” within a Strategy configuration. Here you can add or remove any attribute or even adjust the slider for the attribute you want to change the score."
 
 - question: How can I change the weightage score of strategy model parameters?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "You can click on the ‘edit’ icon next to “Configure Model Parameters” within a Strategy configuration. Adjust the slider for the attribute you want to change the score."
 
 - question: Can I modify any live feature item?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "Yes, you can edit and update the configuration for any live item. Note: Any changes made to an experiment configuration will automatically reset the test."
 
 - question: How can I display recommendations only on a page/page type?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "You can configure an Experience to render only on a particular page."
 
 - question: Can I change my template type for an existing template?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
 
 # DXM FAQs (continued)
 
 - question: Can I change/edit my template while configuring a module?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "No, it’s not possible to directly edit a template while from within a module config screen."
 
 - question: Can I link multiple different strategies and/or content on the same template & module?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "Yes, as part of module configuration, you can link multiple Strategies and/or Content to the same template."
 
 - question: How can I set a goal, metric & confidence score for an Experiment?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "While configuring an Experience, within the Experiment Settings, you can set a goal, metric & confidence score for a particular Experiment."
 
 - question: How can I create & publish an experience across all the pages on my website?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "Currently, it’s not possible to publish a single Experience across all pages on your website."
 
 - question: For collaborative filtering strategy, can I combine two different models into the same strategy?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "Yes, simply select the models you’d want to be part of the Collaborative Filtering Strategy and finish the strategy setup."
 
 - question: What is an Experiment?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "An Experiment is simply comparing two or more variations of similar items to identify the best possible variation to use on a particular page, placement, and for a particular user group or individual user."
 
 - question: What does ‘Goal’ & ‘Metric (KPI)’ represent?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "Goal & Metric represent the value selected as part of the Experiment setup. They help determine which variation is having the best performance against all others."
 
-- question: Why is there no data in Blox.ai impact metrics?
-  tags: ['Blox', 'DXM']
-  answer: "If you are a new customer, after the initial integration of Blox on your platform, please wait for up to 24 hours before data is made available in the metrics section."
+- question: Why is there no data in Vue.ai impact metrics?
+  tags: ['Vue', 'DXM']
+  answer: "If you are a new customer, after the initial integration of Vue on your platform, please wait for up to 24 hours before data is made available in the metrics section."
 
 - question: Where can I find the performance metrics for the strategy I created?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: "Navigate to DXM -> Metrics -> Performance -> Strategy."
 
 # Content Hub FAQs
 
 - question: What is Content Hub? What does it do?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "Content Hub enables you to create Catalogs by uploading data from different datasources, manage Catalog content, and enrich Catalog content."
 
 - question: How do I create a Catalog?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "You can create a Catalog by clicking on ‘Create New’ in the Explore screen."
 
 - question: How can I access a Catalog’s Content?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "In the Catalog listing table, either click on the Catalog Name or on the ‘info’ icon."
 
 - question: What are the types of data sources supported?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "We currently support Amazon S3, SFTP, Kafka, and Manual File upload."
 
 - question: Can I upload data from a Shopify feed?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "No, we currently don’t support Shopify feed as a data source."
 
 - question: What is a schema?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "A schema represents how the Catalog data is organized in the database; the relationship between entities like table name, field, attribute, field type, etc."
 
 - question: What is a feed?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "A feed is a collection of data."
 
 - question: Can I edit a Catalog after ‘Submit’?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "Yes, click on the ‘edit’ icon next to each Catalog name in the listing table or click on the ‘Update Catalog settings’ CTA from the Catalog Explore screen."
 
 - question: What are the types of Catalog supported?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "We currently support four types of Catalog: Product Catalog, Document Catalog, Banner Catalog, and Offer Catalog."
 
 - question: What are the segments supported?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "We currently support a host of segments."
 
 - question: What does ‘Test Connection’ do?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "Test Connection verifies if all the details provided as part of the Catalog creation process are valid. Test connection must be successful in order to proceed to finish configuring the Catalog."
 
 - question: Can I change the Primary Key after a Catalog has been Submitted?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "No, it’s not possible to change the Primary key after the Catalog has been submitted."
 
 - question: What are the data types supported for Primary Key?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "Currently, we only support “String” data type for the primary key."
 
 - question: When will the catalog sync during initial setup? Is it based on the sync schedule?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "Initial sync happens immediately, following ones happen according to schedule."
 
 - question: What are the sync options available for a Catalog?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "We support a variety of sync & schedule options as part of the Catalog."
 
 - question: If a data file from a customer has duplicate column headers, what is the default behavior in handling it?
-  tags: ['Blox', 'Content Hub']
+  tags: ['Vue', 'Content Hub']
   answer: "If they are duplicated, the system takes them as they are. There is no default merging or any other method applied."
 
 # Audience Hub FAQs
 
 - question: What is Audience Hub?
-  tags: ['Blox', 'Audience Hub']
+  tags: ['Vue', 'Audience Hub']
   answer: "Audience Hub is where you can manage your audience, segment your users, and create personalized experiences for them."
 
 - question: How to create a new audience?
-  tags: ['Blox', 'Audience Hub']
+  tags: ['Vue', 'Audience Hub']
   answer: "To create a new audience, click on 'Create New Audience' in the Audience listing table."
 
 - question: How to add users-create a custom user segment?
-  tags: ['Blox', 'Audience Hub']
+  tags: ['Vue', 'Audience Hub']
   answer: "You can add users or create a custom user segment by selecting the 'Add Users' option within the Audience details page."
 
 - question: What are the metrics that can be optimized for experiments?
-  tags: ['Blox', 'DXM']
+  tags: ['Vue', 'DXM']
   answer: Conversion rate, Average Order Value (AOV), Average Revenue Per User (ARPU), User Engagement Rate, Average Order Size (AOS), and Click-Through Rate (CTR) are the key metrics that can be optimized for experiments.
 
 
