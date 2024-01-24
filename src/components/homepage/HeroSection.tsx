@@ -92,7 +92,7 @@ export default function HeroSection() {
   return (
     <>
       <div style={{ paddingLeft: '610px' , paddingTop:'20px' }}>
-      <ThemedImage
+      {/* <ThemedImage
         sources={{
           light: 'https://d1r1e7xjkfj7nz.cloudfront.net/Black.png',
           dark: 'https://d1r1e7xjkfj7nz.cloudfront.net/White.png',
@@ -101,7 +101,7 @@ export default function HeroSection() {
         width="200"
         height="auto"
         style={{ maxWidth: '100%' }}
-      />
+      /> */}
     </div>
       <section className="noise-bg no-underline-links px-4 pt-16 lg:py-0">
         <div className="flex flex-col items-center justify-between py-14">
