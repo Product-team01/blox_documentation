@@ -35,16 +35,16 @@ const docs = [
   // },
 
   // Web UI Kits
-  // {
-  //   id: 'ui-kit',
-  //   path: 'docs/ui-kit',
-  //   routeBasePath: '/ui-kit/',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'Content-Manager',
+    path: 'docs/Content-Manager',
+    routeBasePath: '/Content-Manager/',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
   // {
   //   id: 'react-ui-kit',
   //   path: 'docs/react-ui-kit/',
@@ -65,61 +65,62 @@ const docs = [
       },
     },
   },
-  // {
-  //   id: 'angular-ui-kit',
-  //   path: 'docs/angular-ui-kit',
-  //   routeBasePath: '/angular-ui-kit',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'angular-ui-kit',
+    path: 'docs/angular-ui-kit',
+    routeBasePath: '/angular-ui-kit',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+
 
   // Web Core
-  // {
-  //   id: 'web-core',
-  //   path: 'docs/web-core',
-  //   routeBasePath: '/web-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'Connectors-Manager',
+    path: 'docs/Connectors-Manager',
+    routeBasePath: '/Connectors-Manager',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
   // React Web Core
-  // {
-  //   id: 'react-web-core',
-  //   path: 'docs/react-web-core',
-  //   routeBasePath: '/react-web-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'Document-Manager',
+    path: 'docs/Document-Manager',
+    routeBasePath: '/Document-Manager',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
 
   // Mobile Core
-  // {
-  //   id: 'android-core',
-  //   path: 'docs/android-core',
-  //   routeBasePath: '/android-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'flutter-core',
-  //   path: 'docs/flutter-core',
-  //   routeBasePath: '/flutter-core',
-  //   versions: {
-  //     current: {
-  //       label: '1.x.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'android-core',
+    path: 'docs/android-core',
+    routeBasePath: '/android-core',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  {
+    id: 'Digital-Experience-Manager',
+    path: 'docs/Digital-Experience-Manager',
+    routeBasePath: '/Digital-Experience-Manager',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
   // {
   //   id: 'ios-core',
   //   path: 'docs/ios-core',
@@ -130,58 +131,58 @@ const docs = [
   //     },
   //   },
   // },
-  // {
-  //   id: 'rn-core',
-  //   path: 'docs/rn-core',
-  //   routeBasePath: '/rn-core',
-  //   versions: {
-  //     current: {
-  //       label: '0.5.x',
-  //     },
-  //   },
-  // },
+  {
+    id: 'Audience-Manager',
+    path: 'docs/Audience-Manager',
+    routeBasePath: '/Audience-Manager',
+    versions: {
+      current: {
+        label: '0.5.x',
+      },
+    },
+  },
 
   // Mobile UI Kits
-  // {
-  //   id: 'android',
-  //   path: 'docs/android',
-  //   routeBasePath: '/android',
-  //   versions: {
-  //     current: {
-  //       label: '0.14.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'flutter',
-  //   path: 'docs/flutter',
-  //   routeBasePath: '/flutter',
-  //   versions: {
-  //     current: {
-  //       label: '0.7.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'ios',
-  //   path: 'docs/ios',
-  //   routeBasePath: '/ios',
-  //   versions: {
-  //     current: {
-  //       label: '1.33.x',
-  //     },
-  //   },
-  // },
-  // {
-  //   id: 'react-native',
-  //   path: 'docs/rn-ui-kit',
-  //   routeBasePath: '/react-native/e',
-  //   // versions: {
-  //   //   current: {
-  //   //     label: '1.4.x',
-  //   //   },
-  //   // },
-  // },
+  {
+    id: 'android',
+    path: 'docs/android',
+    routeBasePath: '/android',
+    versions: {
+      current: {
+        label: '0.14.x',
+      },
+    },
+  },
+  {
+    id: 'flutter',
+    path: 'docs/flutter',
+    routeBasePath: '/flutter',
+    versions: {
+      current: {
+        label: '0.7.x',
+      },
+    },
+  },
+  {
+    id: 'ios',
+    path: 'docs/ios',
+    routeBasePath: '/ios',
+    versions: {
+      current: {
+        label: '1.33.x',
+      },
+    },
+  },
+  {
+    id: 'react-native',
+    path: 'docs/rn-ui-kit',
+    routeBasePath: '/react-native/e',
+    versions: {
+      current: {
+        label: '1.4.x',
+      },
+    },
+  },
 ];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
@@ -353,6 +354,7 @@ const plugins = [
 const fs = require('fs');
 const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
 const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
+const intHTML = fs.readFileSync('./src/snippets/int.html', 'utf-8');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -412,13 +414,14 @@ const config = {
           height: '40px',
           width: '101px',
         },
-        items: [{
-            label: 'Guides',
-            to: 'guides',
-            className: 'guides-top-header',
-          },
+        items: [
+          // {
+          //   label: 'Guides',
+          //   to: 'guides',
+          //   className: 'guides-top-header',
+          // },
           {
-            label: 'Integration Docs',
+            label: 'User Guides',
             type: 'dropdown',
             className: 'dyte-dropdown',
             items: [{
@@ -428,6 +431,18 @@ const config = {
             }, ],
            
           },
+          {
+            label: 'Integration',
+            type: 'dropdown',
+            className: 'dyte-dropdown',
+            items: [{
+              type: 'html',
+              value: intHTML,
+              className: 'dyte-dropdown',
+            }, ],
+           
+          },
+        
         
           
           // {
@@ -459,7 +474,12 @@ const config = {
           //   position: 'right',
           //   className: 'navbar-book-demo',
           // },
-        
+          // {
+          //   label: 'Raise A Ticket',
+          //   href: 'https://dev.dyte.io/register',
+          //   position: 'right',
+          //   className: 'dev-portal-signup dev-portal-link',
+          // },
         ],
       },
       footer: {
