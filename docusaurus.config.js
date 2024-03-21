@@ -65,16 +65,16 @@ const docs = [
       },
     },
   },
-  {
-    id: 'angular-ui-kit',
-    path: 'docs/angular-ui-kit',
-    routeBasePath: '/angular-ui-kit',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
+  // {
+  //   id: 'angular-ui-kit',
+  //   path: 'docs/angular-ui-kit',
+  //   routeBasePath: '/angular-ui-kit',
+  //   versions: {
+  //     current: {
+  //       label: '1.x.x',
+  //     },
+  //   },
+  // },
 
 
   // Web Core
@@ -101,16 +101,16 @@ const docs = [
   },
 
   // Mobile Core
-  {
-    id: 'android-core',
-    path: 'docs/android-core',
-    routeBasePath: '/android-core',
-    versions: {
-      current: {
-        label: '1.x.x',
-      },
-    },
-  },
+  // {
+  //   id: 'android-core',
+  //   path: 'docs/android-core',
+  //   routeBasePath: '/android-core',
+  //   versions: {
+  //     current: {
+  //       label: '1.x.x',
+  //     },
+  //   },
+  // },
   {
     id: 'Digital-Experience-Manager',
     path: 'docs/Digital-Experience-Manager',
@@ -143,46 +143,46 @@ const docs = [
   },
 
   // Mobile UI Kits
-  {
-    id: 'android',
-    path: 'docs/android',
-    routeBasePath: '/android',
-    versions: {
-      current: {
-        label: '0.14.x',
-      },
-    },
-  },
-  {
-    id: 'flutter',
-    path: 'docs/flutter',
-    routeBasePath: '/flutter',
-    versions: {
-      current: {
-        label: '0.7.x',
-      },
-    },
-  },
-  {
-    id: 'ios',
-    path: 'docs/ios',
-    routeBasePath: '/ios',
-    versions: {
-      current: {
-        label: '1.33.x',
-      },
-    },
-  },
-  {
-    id: 'react-native',
-    path: 'docs/rn-ui-kit',
-    routeBasePath: '/react-native/e',
-    versions: {
-      current: {
-        label: '1.4.x',
-      },
-    },
-  },
+  // {
+  //   id: 'android',
+  //   path: 'docs/android',
+  //   routeBasePath: '/android',
+  //   versions: {
+  //     current: {
+  //       label: '0.14.x',
+  //     },
+  //   },
+  // },
+  // {
+  //   id: 'flutter',
+  //   path: 'docs/flutter',
+  //   routeBasePath: '/flutter',
+  //   versions: {
+  //     current: {
+  //       label: '0.7.x',
+  //     },
+  //   },
+  // },
+  // {
+  //   id: 'ios',
+  //   path: 'docs/ios',
+  //   routeBasePath: '/ios',
+  //   versions: {
+  //     current: {
+  //       label: '1.33.x',
+  //     },
+  //   },
+  // },
+  // {
+  //   id: 'react-native',
+  //   path: 'docs/rn-ui-kit',
+  //   routeBasePath: '/react-native/e',
+  //   versions: {
+  //     current: {
+  //       label: '1.4.x',
+  //     },
+  //   },
+  // },
 ];
 
 /** @type {import('@docusaurus/plugin-content-docs').Options} */
