@@ -65,6 +65,18 @@ const docs = [
       },
     },
   },
+
+  {
+    id: 'Account',
+    path: 'docs/Account',
+    routeBasePath: '/Account',
+    versions: {
+      current: {
+        label: '1.x.x',
+      },
+    },
+  },
+  
   // {
   //   id: 'angular-ui-kit',
   //   path: 'docs/angular-ui-kit',
@@ -355,7 +367,7 @@ const fs = require('fs');
 const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
 const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
 const intHTML = fs.readFileSync('./src/snippets/int.html', 'utf-8');
-
+const account = fs.readFileSync('./src/snippets/Account.html', 'utf-8');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   ...meta,
@@ -442,7 +454,17 @@ const config = {
             }, ],
            
           },
-        
+          {
+            label: 'Account',
+            type: 'dropdown',
+            className: 'dyte-dropdown',
+            items: [{
+              type: 'html',
+              value: account,
+              className: 'dyte-dropdown',
+            }, ],
+           
+          },
         
           
           // {
