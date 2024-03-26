@@ -9,7 +9,7 @@ const meta = {
   tagline: 'Vue support',
   url: 'https://getblox.ai/',
   baseUrl: '/',
-  favicon: '/favi.svg',
+  favicon: '/Whitehero.png',
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
